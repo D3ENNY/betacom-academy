@@ -1,5 +1,0 @@
-namespace gestioneAuto;
-class Engine
-{
-    
-}
