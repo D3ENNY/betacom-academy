@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "wg74+JPnIaCPaFEr1aAtikPph1hmOnXMW21H8ILp9n9AA5R4EBXHB1ErxISzykXp1YgWWE/WZRwky6U+CrQdLA==",
+  "success": true,
+  "projectFilePath": "/home/denny/Betacom Academy/pratica/gestioneAuto/gestioneAuto.csproj",
+  "expectedPackageFiles": [
+    "/home/denny/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.11/microsoft.aspnetcore.app.ref.7.0.11.nupkg.sha512"
+  ],
+  "logs": []
+}

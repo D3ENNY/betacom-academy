@@ -1,0 +1,5 @@
+namespace gestioneAuto;
+
+class Validate{
+    
+}
