@@ -5,6 +5,7 @@ class Car
     private readonly Company company;
     private readonly Model model;
     private readonly Setup setup;
+    internal Setup GetSetup => setup;
 
     public Car(string companyName, string modelName,string year, string chassisNumber, string? fuel, string? cubicCapacity){
         this.company = Company.GetCompList.Find(x => x.GetName.Equals(companyName)) ?? new(companyName);

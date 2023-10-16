@@ -5,6 +5,7 @@ class DataManager : Validate
 {
     private static List<Car> cars = new();
     internal List<Car> getCarList => cars;
+    private readonly MenuManager menu = new();
 
     internal static bool InsertFileCar(string carPath, string setuPath){
         List<string[]> carList= ManipulateFileList(Engine.ReadFile(carPath), 4);
@@ -56,13 +57,13 @@ class DataManager : Validate
         {
             Console.Clear();
             Console.Error.WriteLine($"c'è stato qualche errore sulla console{e.Message}\npremi un tasto per continuare");
-            Console.ReadLine();
+            Console.ReadKey();
         }
         catch (System.Exception e)
         {
             Console.Clear();
             Console.Error.WriteLine($"c'è stato qualche errore durante l'esecuzione del programma\n{e.Message}\npremi un tasto per continuare");
-            Console.ReadLine();
+            Console.ReadKey();
         }
 
         return text;
@@ -83,13 +84,13 @@ class DataManager : Validate
         {
             Console.Clear();
             Console.Error.WriteLine($"c'è stato qualche errore sulla console{e.Message}\npremi un tasto per continuare");
-            Console.ReadLine();
+            Console.ReadKey();
         }
         catch (System.Exception e)
         {
             Console.Clear();
             Console.Error.WriteLine($"c'è stato qualche errore durante l'esecuzione del programma\n{e.Message}\npremi un tasto per continuare");
-            Console.ReadLine();
+            Console.ReadKey();
         }
 
         return chassisNumber;
@@ -110,13 +111,13 @@ class DataManager : Validate
         {
             Console.Clear();
             Console.Error.WriteLine($"c'è stato qualche errore sulla console{e.Message}\npremi un tasto per continuare");
-            Console.ReadLine();
+            Console.ReadKey();
         }
         catch (System.Exception e)
         {
             Console.Clear();
             Console.Error.WriteLine($"c'è stato qualche errore durante l'esecuzione del programma\n{e.Message}\npremi un tasto per continuare");
-            Console.ReadLine();
+            Console.ReadKey();
         }
 
         return text;
@@ -137,13 +138,13 @@ class DataManager : Validate
         {
             Console.Clear();
             Console.Error.WriteLine($"c'è stato qualche errore sulla console{e.Message}\npremi un tasto per continuare");
-            Console.ReadLine();
+            Console.ReadKey();
         }
         catch (System.Exception e)
         {
             Console.Clear();
             Console.Error.WriteLine($"c'è stato qualche errore durante l'esecuzione del programma\n{e.Message}\npremi un tasto per continuare");
-            Console.ReadLine();
+            Console.ReadKey();
         }
 
         return cubicCapacity;
@@ -164,13 +165,13 @@ class DataManager : Validate
         {
             Console.Clear();
             Console.Error.WriteLine($"c'è stato qualche errore sulla console{e.Message}\npremi un tasto per continuare");
-            Console.ReadLine();
+            Console.ReadKey();
         }
         catch (System.Exception e)
         {
             Console.Clear();
             Console.Error.WriteLine($"c'è stato qualche errore durante l'esecuzione del programma\n{e.Message}\npremi un tasto per continuare");
-            Console.ReadLine();
+            Console.ReadKey();
         }
 
         return year;
@@ -181,8 +182,7 @@ class DataManager : Validate
         Console.ReadKey();
     }
 
-    internal void RemoveCar()
-    {
-        
-    }
+    internal bool RemoveCar() => cars.Remove(cars.Find(x => x.GetSetup.GetChassis.Equals(InputChssisNumber(menu.RemoveCar()))));
+    
+    
 }
