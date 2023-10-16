@@ -23,24 +23,37 @@ class MenuManager
         ");
     }
 
+    private void noCarFound(){
+        Console.Clear();
+        Console.WriteLine(@"
+        ================================
+           non sono state trovate auto
+        ================================
+        ");
+    }
+
     internal void HandleChoise(int choise){
         switch(choise){
             case 1:
                 //inserimento manuale auto
-                if(!data.InsertCliCar());
+                if(!data.InsertCliCar())
                     Console.Error.WriteLine("errore nell'inserimento di qualche dato a console");
                 break;
             case 2:
                 //eliminazione auto
-
-                break;
+                if(data.getCarList.Count > 0)
+                    data.RemoveCar();
+                else noCarFound();
+                break;  
             case 3:
                 //ricerca auto
 
                 break;
             case 4: 
                 //mostra tutte le auto del concessionario
-                data.ShowCar();
+                if(data.getCarList.Count > 0)
+                    data.ShowCar();
+                else noCarFound();
                 break;
             case 5:
                 //input da file

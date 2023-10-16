@@ -1,8 +1,10 @@
+
 namespace gestioneAuto;
 
 class DataManager : Validate
 {
     private static List<Car> cars = new();
+    internal List<Car> getCarList => cars;
 
     internal static bool InsertFileCar(string carPath, string setuPath){
         List<string[]> carList= ManipulateFileList(Engine.ReadFile(carPath), 4);
@@ -179,4 +181,8 @@ class DataManager : Validate
         Console.ReadKey();
     }
 
+    internal void RemoveCar()
+    {
+        
+    }
 }
