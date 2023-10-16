@@ -18,3 +18,4 @@ class LessonSix
     //     System.Console.WriteLine(e.GetType());
     // }
 }
+

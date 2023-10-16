@@ -1,10 +1,12 @@
-﻿namespace startaccademynet4;
+﻿using static startaccademynet4.OOPTest;
+
+namespace startaccademynet4;
 internal class Program{
     static void Main(string[] args){
         Console.ForegroundColor = ConsoleColor.Magenta;
         Program p = new Program();
 
-        p.test22();
+        p.test23();
     }
 
     private void exit(){
@@ -305,20 +307,24 @@ internal class Program{
     //             System.Console.WriteLine("valido");
     //     }else System.Console.WriteLine("non valido");
     // }
-    private void test22(){
-        System.Console.WriteLine("es1: ");
-        LessonSix.VisualizzaEnumeratori<Enumerators.Alimentazione>();
-        System.Console.WriteLine("\nes2: ");
-        LessonSix.VisualizzaTipoOggetto<double>(123.4);
-        LessonSix.VisualizzaTipoOggetto("stringa");
-        LessonSix.VisualizzaTipoOggetto(DateTime.Now);
-        //System.Console.WriteLine("\nes3: ");
-        //LessonSix.VisualizzaEnum(Enumerators.Alimentazione); non si può fare
-    }
 
     // private void test22(){
-    //     string str = "675d";
-    //     int n = int.Parse(str);
-    //     System.Console.WriteLine(n);
+    //     System.Console.WriteLine("es1: ");
+    //     LessonSix.VisualizzaEnumeratori<Enumerators.Alimentazione>();
+    //     System.Console.WriteLine("\nes2: ");
+    //     LessonSix.VisualizzaTipoOggetto<double>(123.4);
+    //     LessonSix.VisualizzaTipoOggetto("stringa");
+    //     LessonSix.VisualizzaTipoOggetto(DateTime.Now);
+    //     //System.Console.WriteLine("\nes3: ");
+    //     //LessonSix.VisualizzaEnum(Enumerators.Alimentazione); non si può fare
     // }
+
+    private void test23(){
+        // MezziLocomozione mezziLocomozione = new();
+        MezziTrasporto trasporto = new();
+        System.Console.WriteLine(trasporto.getTipoTrasporto());
+
+        MountainBike mbt = new();
+        System.Console.WriteLine(mbt.TipoMotore());
+    }
 }
