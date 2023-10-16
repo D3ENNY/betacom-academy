@@ -27,7 +27,8 @@ class MenuManager
         switch(choise){
             case 1:
                 //inserimento manuale auto
-                data.InsertCliCar();
+                if(!data.InsertCliCar());
+                    Console.Error.WriteLine("errore nell'inserimento di qualche dato a console");
                 break;
             case 2:
                 //eliminazione auto
@@ -48,6 +49,9 @@ class MenuManager
             case 6:
                 //modifica auto
 
+                break;
+            case 7:
+                //the silent is golden
                 break;
             default:
                 Console.Error.WriteLine("input non gestito...\npremere un tasto per continuare");

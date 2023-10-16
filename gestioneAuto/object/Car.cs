@@ -20,6 +20,6 @@ class Car
 
     public override string ToString()
     {
-        return $"{this.company.ToString()}{this.model.ToString()}{this.setup.ToString()}";
+        return $"{this.company}{this.model}{this.setup}";
     }
 }

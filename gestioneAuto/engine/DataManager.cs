@@ -7,32 +7,29 @@ class DataManager : Validate
     internal bool InsertCliCar(){
         string? fuel, cubicCapacity;
         string company, model, chassisNumber, year;
+        Console.Clear();
         Console.WriteLine("gli unici dati non obbligatori sono quelli che fanno riferimento all'allestimento:\n-alimentazione\n-anno produzioe\n\n");
-        Console.Write("inserisci casa automobilistica: ");
-        if(string.IsNullOrEmpty((company = InputText() ?? ""))) return false;
-        Console.Write("inserisci nome modello: ");
-        if(string.IsNullOrEmpty((model = InputText() ?? ""))) return false;
-        Console.WriteLine("inserisci anno di produzione: ");
-        if(string.IsNullOrEmpty((year = InputYear() ?? ""))) return false;
-        Console.Write("inserisci numero telaio: ");
-        if(string.IsNullOrEmpty((chassisNumber = InputChssisNumber() ?? ""))) return false;
-        Console.Write("inserici alimentazione: ");
-        fuel = (fuel = InputNullText()) == " " ? null : fuel;
-        Console.Write("inserisi anno di inizio produzione: ");
-        cubicCapacity = (cubicCapacity = InputCubiCapacity()) == "" ? null : cubicCapacity;
+        if(string.IsNullOrEmpty((company = InputText("inserisci casa automobilistica: ") ?? ""))) return false;
+        if(string.IsNullOrEmpty((model = InputText("inserisci nome modello: ") ?? ""))) return false;
+        if(string.IsNullOrEmpty((year = InputYear("inserisci anno di produzione: ") ?? ""))) return false;
+        if(string.IsNullOrEmpty((chassisNumber = InputChssisNumber("inserisci numero telaio: ") ?? ""))) return false;
+        fuel = (fuel = InputNullText("inserici alimentazione: ")) == " " ? null : fuel;
+        cubicCapacity = (cubicCapacity = InputCubiCapacity("inserisi cilindrata: ")) == "" ? null : cubicCapacity;
         cars.Add(new Car(company, model, year, chassisNumber, fuel, cubicCapacity));
 
         return true;
     }
 
-    private string InputText(){
+    private string InputText(string output){
         string text = "";
         try
         {
             do
             {
+                Console.WriteLine(output);
                 text = Console.ReadLine()!;
-            }while(ValidateText(text));
+                Console.Clear();
+            }while(!ValidateText(text));
         }
         catch(IOException e)
         {
@@ -50,14 +47,16 @@ class DataManager : Validate
         return text;
     }
 
-    private string InputChssisNumber(){
+    private string InputChssisNumber(string output){
         string chassisNumber = "";
         try
         {
             do
             {
+                Console.Write(output);
                 chassisNumber = Console.ReadLine()!;
-            }while(ValidateChassisNumber(chassisNumber));
+                Console.Clear();
+            }while(!ValidateChassisNumber(chassisNumber));
         }
         catch(IOException e)
         {
@@ -75,14 +74,16 @@ class DataManager : Validate
         return chassisNumber;
     }
 
-    private string? InputNullText(){
+    private string? InputNullText(string output){
         string? text = "";
         try
         {
             do
             {
+                Console.WriteLine(output);
                 text = Console.ReadLine()!;
-            }while(ValidateText(text));
+                Console.Clear();
+            }while(!ValidateText(text));
         }
         catch(IOException e)
         {
@@ -100,14 +101,16 @@ class DataManager : Validate
         return text;
     }
 
-    private string InputCubiCapacity(){
+    private string InputCubiCapacity(string output){
         string cubicCapacity = "";
         try
         {
             do
             {
+                Console.WriteLine(output);
                 cubicCapacity = Console.ReadLine()!;
-            }while(ValidateCubiCapacity(cubicCapacity));
+                Console.Clear();
+            }while(!ValidateCubiCapacity(cubicCapacity));
         }
         catch(IOException e)
         {
@@ -125,14 +128,16 @@ class DataManager : Validate
         return cubicCapacity;
     }
 
-    private string InputYear(){
+    private string InputYear(string output){
         string year = "";
         try
         {
             do
             {
+                Console.WriteLine(output);
                 year = Console.ReadLine()!;
-            }while(ValidateYear(year));
+                Console.Clear();
+            }while(!ValidateYear(year));
         }
         catch(IOException e)
         {

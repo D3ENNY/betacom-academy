@@ -4,7 +4,7 @@ namespace gestioneAuto;
 
 class Validate{
     protected bool ValidateText(String text){
-        const string regex = @"^[a-zA-Z\u00C0-\u00FF\s]+$";
+        const string regex = @"^[a-zA-Z\u00C0-\u00FF\d\s]+$";
         return Regex.IsMatch(text.Trim(), regex) && !string.IsNullOrWhiteSpace(text);
     }
     protected bool ValidateNullText(String text){
