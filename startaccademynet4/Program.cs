@@ -1,12 +1,10 @@
-﻿using System.Security.Cryptography.X509Certificates;
-
-namespace startaccademynet4;
+﻿namespace startaccademynet4;
 internal class Program{
     static void Main(string[] args){
         Console.ForegroundColor = ConsoleColor.Magenta;
         Program p = new Program();
 
-        p.test21();
+        p.test22();
     }
 
     private void exit(){
@@ -299,13 +297,23 @@ internal class Program{
     //     studentFilter.ForEach(x => Console.WriteLine(x.ToString()));
     // }
 
-    private void test21(){
-        string str = "f";
+    // private void test21(){
+    //     string str = "f";
 
-        if(str.Length==8 && str[..2].ToCharArray().ToList().TrueForAll(c => char.IsLetter(c)) &&
-            int.TryParse(str[3..], out _)){
-                System.Console.WriteLine("valido");
-        }else System.Console.WriteLine("non valido");
+    //     if(str.Length==8 && str[..2].ToCharArray().ToList().TrueForAll(c => char.IsLetter(c)) &&
+    //         int.TryParse(str[3..], out _)){
+    //             System.Console.WriteLine("valido");
+    //     }else System.Console.WriteLine("non valido");
+    // }
+    private void test22(){
+        System.Console.WriteLine("es1: ");
+        LessonSix.VisualizzaEnumeratori<Enumerators.Alimentazione>();
+        System.Console.WriteLine("\nes2: ");
+        LessonSix.VisualizzaTipoOggetto<double>(123.4);
+        LessonSix.VisualizzaTipoOggetto("stringa");
+        LessonSix.VisualizzaTipoOggetto(DateTime.Now);
+        //System.Console.WriteLine("\nes3: ");
+        //LessonSix.VisualizzaEnum(Enumerators.Alimentazione); non si può fare
     }
 
     // private void test22(){
