@@ -330,5 +330,6 @@ internal class Program{
 
     private void test24(){
         ClasseParticolare cp = ClasseParticolare.Instance();
+        ClasseParticolare cp1 = ClasseParticolare.Instance();
     }
 }
