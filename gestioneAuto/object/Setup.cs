@@ -18,6 +18,6 @@ class Setup
 
     public override string ToString()
     {
-        return $"allestimenti:\nnumero telaio: {this.chassisNumber}\nalimentazione: {this.fuel}\ncilindrata: {this.cubicCapacity}CC";
+        return $"\nallestimenti:\nnumero telaio: {this.chassisNumber}\nalimentazione: {this.fuel}\ncilindrata: {this.cubicCapacity}CC";
     }
 }
