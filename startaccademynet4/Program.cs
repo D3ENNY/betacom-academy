@@ -6,7 +6,7 @@ internal class Program{
         Console.ForegroundColor = ConsoleColor.Magenta;
         Program p = new Program();
 
-        p.test23();
+        p.test24();
     }
 
     private void exit(){
@@ -319,12 +319,16 @@ internal class Program{
     //     //LessonSix.VisualizzaEnum(Enumerators.Alimentazione); non si può fare
     // }
 
-    private void test23(){
-        // MezziLocomozione mezziLocomozione = new();
-        MezziTrasporto trasporto = new();
-        System.Console.WriteLine(trasporto.getTipoTrasporto());
+    // private void test23(){
+    //     // MezziLocomozione mezziLocomozione = new();
+    //     MezziTrasporto trasporto = new();
+    //     System.Console.WriteLine(trasporto.getTipoTrasporto());
 
-        MountainBike mbt = new();
-        System.Console.WriteLine(mbt.TipoMotore());
+    //     MountainBike mbt = new();
+    //     System.Console.WriteLine(mbt.TipoMotore());
+    // }
+
+    private void test24(){
+        ClasseParticolare cp = ClasseParticolare.Instance();
     }
 }
