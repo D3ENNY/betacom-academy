@@ -19,7 +19,7 @@ class Company
     }
 
     public override string ToString(){
-        return $"modello:\n{this.name}\n====================";
+        return $"casa automobilistica:\n{this.name}\n====================";
     } 
     
 }

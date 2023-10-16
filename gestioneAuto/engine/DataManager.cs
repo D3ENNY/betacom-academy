@@ -14,7 +14,7 @@ class DataManager : Validate
                         year: x[3],
                         chassisNumber: x[0],
                         fuel: carData?[3],
-                        cubicCapacity: carData?[4]);
+                        cubicCapacity: carData?[2]);
         }).ToList();
         return true;
     }
@@ -175,7 +175,7 @@ class DataManager : Validate
     }
     internal void ShowCar(){
         Console.Clear();
-        cars.ForEach(x => System.Console.WriteLine(x.ToString()));
+        cars.ForEach(x => System.Console.WriteLine(x.ToString() + "\n\n"));
         Console.ReadKey();
     }
 
