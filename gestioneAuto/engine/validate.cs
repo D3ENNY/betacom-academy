@@ -15,6 +15,12 @@ class Validate{
         const string regex = @"^[a-z]{3}\d{5}$";
         return Regex.IsMatch(chassisNumber.Trim(), regex) && !string.IsNullOrEmpty(chassisNumber);
     }
+
+    protected bool ValidateYear(string year){
+        const string regex = @"^\d{4}$";
+        int.TryParse(year, out int tmp);
+        return Regex.IsMatch(year.Trim(), regex) && tmp < DateTime.Now.Year && tmp >= 1890;
+    }
     protected bool ValidateCubiCapacity(string cubiCapacity){
         const string regex = @"^\d{4}$";  
         int.TryParse(cubiCapacity, out int tmp);

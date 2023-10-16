@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/denny/Betacom Academy/gestioneAuto/gestioneAuto.csproj",
+      "projectUniqueName": "/home/denny/Betacom Academy/pratica/gestioneAuto/gestioneAuto.csproj",
       "projectName": "gestioneAuto",
-      "projectPath": "/home/denny/Betacom Academy/gestioneAuto/gestioneAuto.csproj",
+      "projectPath": "/home/denny/Betacom Academy/pratica/gestioneAuto/gestioneAuto.csproj",
       "packagesPath": "/home/denny/.nuget/packages/",
-      "outputPath": "/home/denny/Betacom Academy/gestioneAuto/obj/",
+      "outputPath": "/home/denny/Betacom Academy/pratica/gestioneAuto/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/denny/.nuget/NuGet/NuGet.Config"

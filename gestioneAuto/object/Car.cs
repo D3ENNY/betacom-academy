@@ -12,9 +12,9 @@ class Car
         this.setup = setup;
     }
 
-    public Car(string companyName, string modelName, string chassisNumber, string? fuel, string? cubicCapacity){
+    public Car(string companyName, string modelName,string year, string chassisNumber, string? fuel, string? cubicCapacity){
         this.company = Company.GetCompList.Find(x => x.GetName.Equals(companyName)) ?? new(companyName);
-        this.model = Model.GetModList.Find(x => x.GetName.Equals(modelName)) ?? new(modelName);
+        this.model = Model.GetModList.Find(x => x.GetName.Equals(modelName) && x.getYear.Equals(year)) ?? new(modelName, year);
         this.setup = Setup.GetSetList.Find(x => x.GetChassis.Equals(chassisNumber)) ?? new(chassisNumber, fuel, cubicCapacity);
     }
 

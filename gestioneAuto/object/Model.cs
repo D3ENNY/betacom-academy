@@ -8,6 +8,7 @@ class Model
     private readonly int id;
     private readonly string name="";
     private readonly int year;
+    internal string getYear => year.ToString();
     internal string GetName => name;
 
 
