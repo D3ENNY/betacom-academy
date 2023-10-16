@@ -33,7 +33,6 @@ class MenuManager
     }
 
     internal string RemoveCar(){
-        Console.Clear();
         return@"
         ================================
                 eliminazione auto       
@@ -42,7 +41,7 @@ class MenuManager
         ";
     }
 
-    private void exitMod(){
+    private void ExitMod(){
         Console.WriteLine("premere un tasto per continuare:");
         Console.ReadKey();
     }
@@ -54,7 +53,7 @@ class MenuManager
                 if(!data.InsertCliCar())
                     Console.Error.WriteLine("errore nell'inserimento di qualche dato a console");
                 else Console.WriteLine("auto inserita con successo");
-                exitMod();
+                ExitMod();
                 break;
             case 2:
                 //eliminazione auto
@@ -63,17 +62,19 @@ class MenuManager
                         Console.Error.WriteLine("errore nella rimozione dell'auto");
                     else Console.WriteLine("eliminazione auto effettuata");
                 else NoCarFound();
-                exitMod();
+                ExitMod();
                 break;  
             case 3:
                 //ricerca auto
-
+                if(data.getCarList.Count > 0)
+                    data.SearchCar();
                 break;
             case 4: 
                 //mostra tutte le auto del concessionario
                 if(data.getCarList.Count > 0)
                     data.ShowCar();
                 else NoCarFound();
+                ExitMod();
                 break;
             case 5:
                 //input da file

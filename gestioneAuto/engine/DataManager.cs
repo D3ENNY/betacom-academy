@@ -1,4 +1,3 @@
-
 namespace gestioneAuto;
 
 class DataManager : Validate
@@ -65,7 +64,6 @@ class DataManager : Validate
             Console.Error.WriteLine($"c'è stato qualche errore durante l'esecuzione del programma\n{e.Message}\npremi un tasto per continuare");
             Console.ReadKey();
         }
-
         return text;
     }
 
@@ -92,7 +90,8 @@ class DataManager : Validate
             Console.Error.WriteLine($"c'è stato qualche errore durante l'esecuzione del programma\n{e.Message}\npremi un tasto per continuare");
             Console.ReadKey();
         }
-
+        System.Console.WriteLine("--->"+chassisNumber);
+        Console.ReadKey();
         return chassisNumber;
     }
 
@@ -176,13 +175,24 @@ class DataManager : Validate
 
         return year;
     }
+
     internal void ShowCar(){
         Console.Clear();
         cars.ForEach(x => System.Console.WriteLine(x.ToString() + "\n\n"));
         Console.ReadKey();
     }
 
-    internal bool RemoveCar() => cars.Remove(cars.Find(x => x.GetSetup.GetChassis.Equals(InputChssisNumber(menu.RemoveCar()))));
-    
-    
+    internal bool RemoveCar()
+    {
+        Car denys = new Car("mm", "ff", "2012", "ghj12345", null, null);
+        return cars.Remove(cars.SingleOrDefault(x => x.GetSetup.GetChassis == Console.ReadLine()) ?? denys);
+    }
+
+    internal void SearchCar()
+    {
+        string input = InputText("inserire anno di produzione o modello dell'auto da cercare: ");
+        // if(int.TryParse(input, out _)){
+        //     cars.FindAll(x => x.)
+        // }
+    }
 }
