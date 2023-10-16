@@ -6,16 +6,16 @@ class Car
     private readonly Model model;
     private readonly Setup setup;
 
-    public Car(Company company, Model model, Setup setup){
-        this.company = company;
-        this.model = model;
-        this.setup = setup;
-    }
-
     public Car(string companyName, string modelName,string year, string chassisNumber, string? fuel, string? cubicCapacity){
         this.company = Company.GetCompList.Find(x => x.GetName.Equals(companyName)) ?? new(companyName);
         this.model = Model.GetModList.Find(x => x.GetName.Equals(modelName) && x.getYear.Equals(year)) ?? new(modelName, year);
         this.setup = Setup.GetSetList.Find(x => x.GetChassis.Equals(chassisNumber)) ?? new(chassisNumber, fuel, cubicCapacity);
+    }
+
+    public Car(Company company, Model model, Setup setup){
+        this.company = company;
+        this.model = model;
+        this.setup = setup;
     }
 
     public override string ToString()

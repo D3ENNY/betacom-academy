@@ -2,8 +2,22 @@ namespace gestioneAuto;
 
 class DataManager : Validate
 {
-    private readonly List<Car> cars = new();
-    readonly Engine engine = new();
+    private static List<Car> cars = new();
+
+    internal static bool InsertFileCar(string carPath, string setuPath){
+        List<string[]> carList= ManipulateFileList(Engine.ReadFile(carPath), 4);
+        List<string[]> setupList = ManipulateFileList(Engine.ReadFile(setuPath), 4);
+        cars = carList.Select(x => {
+            string[]? carData = setupList.Find(y => y[1] == x[0]);
+            return new Car(companyName: x[1],
+                        modelName: x[2],
+                        year: x[3],
+                        chassisNumber: x[0],
+                        fuel: carData?[3],
+                        cubicCapacity: carData?[4]);
+        }).ToList();
+        return true;
+    }
     internal bool InsertCliCar(){
         string? fuel, cubicCapacity;
         string company, model, chassisNumber, year;
@@ -20,6 +34,11 @@ class DataManager : Validate
         return true;
     }
 
+    private static List<string[]> ManipulateFileList(List<string> list, int lenght){
+        return list.Select(x => x.Split(":"))
+            .Where(parts => parts.Length == lenght)
+            .ToList();
+    }
     private string InputText(string output){
         string text = "";
         try

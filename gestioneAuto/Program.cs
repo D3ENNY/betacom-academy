@@ -1,9 +1,12 @@
 ﻿namespace gestioneAuto;
 class Program
 {
-    private static MenuManager menu = new();
+    private static readonly MenuManager menu = new();
+    private const string carPath = "file/carFile/car.txt";
+    private const string setuPath = "file/carFile/carCharacteristics.txt";
     static void Main(string[] args)
     {
+        DataManager.InsertFileCar(carPath, setuPath);
         int choise;
         do{
             menu.Show();

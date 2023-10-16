@@ -60,6 +60,5 @@ class MenuManager
                 break;
 
         }
-
     }
 }

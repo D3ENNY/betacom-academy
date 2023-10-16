@@ -1,7 +1,7 @@
 namespace gestioneAuto;
 class Engine
 {
-    internal List<String> ReadFile(string path){
+    internal static List<String> ReadFile(string path){
         string line = "";
         List<string> lines = new();
         using StreamReader sr = new(path);
@@ -10,7 +10,7 @@ class Engine
         return lines;
     }
 
-    internal void WriteFile(List<String> lines, string path){
+    internal static void WriteFile(List<String> lines, string path){
         using StreamWriter sw = new(path);
         lines.ForEach(x => sw.WriteLine(x));
     }   
