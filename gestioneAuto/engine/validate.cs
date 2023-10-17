@@ -26,4 +26,9 @@ class Validate{
         int.TryParse(cubiCapacity, out int tmp);
         return Regex.IsMatch(cubiCapacity.Trim(), regex) && tmp > 50 && tmp < 7000;
     }
+
+    protected bool ValidateRangeNumber(string number, int s, int e){
+        string regex = $"^[{s}-{e}]$";
+        return Regex.IsMatch(number.Trim(), regex);
+    }
 }

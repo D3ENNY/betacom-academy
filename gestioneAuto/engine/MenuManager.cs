@@ -14,9 +14,8 @@ class MenuManager
              [2] Eliminazione auto
              [3] Ricerca auto
              [4] Mostra tutte le auto
-             [5] Input auto da file
-             [6] Modifica Auto
-             [7] Exit ⏎
+             [5] Modifica Auto
+             [6] Exit ⏎
 
             ===============================
             scelta : 
@@ -38,6 +37,23 @@ class MenuManager
                 eliminazione auto       
         ================================
             inserire numero di telaio:
+        ";
+    }
+
+    internal string EditCar(){
+        return@"
+        ================================
+                  modifica auto       
+        ================================
+              cosa vuoi cambiare?
+        ================================
+          [1] nome casa automobilistica
+          [2] nome modello
+          [3] anno modello
+          [4] alimentazione
+          [5] cilindrata
+        ================================
+
         ";
     }
 
@@ -68,6 +84,7 @@ class MenuManager
                 //ricerca auto
                 if(data.getCarList.Count > 0)
                     data.SearchCar();
+                ExitMod();
                 break;
             case 4: 
                 //mostra tutte le auto del concessionario
@@ -77,15 +94,15 @@ class MenuManager
                 ExitMod();
                 break;
             case 5:
-                //input da file
-
+                //modifica auto
+                // if(data.getCarList.Count > 0)
+                //     data.EditCar();
+                // else NoCarFound();
+                //TODO
                 break;
             case 6:
-                //modifica auto
-
-                break;
-            case 7:
                 //the silent is golden
+
                 break;
             default:
                 Console.Error.WriteLine("input non gestito...\npremere un tasto per continuare");

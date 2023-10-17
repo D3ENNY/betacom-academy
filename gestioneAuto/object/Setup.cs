@@ -20,4 +20,6 @@ class Setup
     {
         return $"\nallestimenti:\nnumero telaio: {this.chassisNumber}\nalimentazione: {this.fuel}\ncilindrata: {this.cubicCapacity}CC";
     }
+
+    public string Line => $"{this.fuel}:{this.cubicCapacity}:{this.chassisNumber}";
 }

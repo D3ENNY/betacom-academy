@@ -23,4 +23,6 @@ class Model
         return $"\nmodello:\n{this.name}\nanno:\n{this.year}\n====================";
     }
 
+    public string Line => $"{this.name}:{this.year}";
+
 }

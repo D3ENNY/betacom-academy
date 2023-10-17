@@ -11,7 +11,11 @@ class Engine
     }
 
     internal static void WriteFile(List<String> lines, string path){
-        using StreamWriter sw = new(path);
-        lines.ForEach(x => sw.WriteLine(x));
+        try{
+            using StreamWriter sw = new(path);
+            lines.ForEach(x => sw.WriteLine(x));
+        }catch(IOException){
+            Console.WriteLine("error");
+        }
     }   
 }

@@ -1,3 +1,4 @@
+
 namespace gestioneAuto;
 
 class DataManager : Validate
@@ -90,8 +91,6 @@ class DataManager : Validate
             Console.Error.WriteLine($"c'è stato qualche errore durante l'esecuzione del programma\n{e.Message}\npremi un tasto per continuare");
             Console.ReadKey();
         }
-        System.Console.WriteLine("--->"+chassisNumber);
-        Console.ReadKey();
         return chassisNumber;
     }
 
@@ -176,23 +175,75 @@ class DataManager : Validate
         return year;
     }
 
+    private int InputNumber(string output){
+        string input = "";
+
+        try
+        {
+            do
+            {
+                Console.WriteLine(output);
+                input = Console.ReadLine()!;
+                Console.Clear();
+            }while(!ValidateRangeNumber(input, 1, 5));
+        }
+        catch(IOException e)
+        {
+            Console.Clear();
+            Console.Error.WriteLine($"c'è stato qualche errore sulla console{e.Message}\npremi un tasto per continuare");
+            Console.ReadKey();
+        }
+        catch (System.Exception e)
+        {
+            Console.Clear();
+            Console.Error.WriteLine($"c'è stato qualche errore durante l'esecuzione del programma\n{e.Message}\npremi un tasto per continuare");
+            Console.ReadKey();
+        }
+
+        return int.Parse(input);
+    }
+
     internal void ShowCar(){
         Console.Clear();
-        cars.ForEach(x => System.Console.WriteLine(x.ToString() + "\n\n"));
+        cars.ForEach(x => Console.WriteLine(x.ToString() + "\n\n"));
         Console.ReadKey();
     }
 
-    internal bool RemoveCar()
-    {
-        Car denys = new Car("mm", "ff", "2012", "ghj12345", null, null);
-        return cars.Remove(cars.SingleOrDefault(x => x.GetSetup.GetChassis == Console.ReadLine()) ?? denys);
+    internal bool RemoveCar(){
+        string search = InputChssisNumber(menu.RemoveCar()).ToLower();
+        return cars.Remove(cars.SingleOrDefault(x => x.GetSetup.GetChassis == search) ?? new Car());
     }
 
     internal void SearchCar()
     {
-        string input = InputText("inserire anno di produzione o modello dell'auto da cercare: ");
-        // if(int.TryParse(input, out _)){
-        //     cars.FindAll(x => x.)
-        // }
+        string input = InputText("inserire anno di produzione o modello dell'auto da cercare: ").ToLower();
+        if(int.TryParse(input, out _)){
+            cars.FindAll(x => x.GetModel.getYear.Equals(input)).ForEach(x => Console.WriteLine(x));
+        }else{
+            (from element in cars where element.GetModel.GetName.ToLower() == input select element).ToList().ForEach(x => Console.WriteLine(x));
+        }
+    }
+
+    // internal void EditCar()
+    // {
+    //     Dictionary<int, string> editCHoise = new Dictionary<int, string>()
+    //     {
+    //         {1,"companyName"},
+    //         {2,"modelName"},
+    //         {3,"year"},
+    //         {4,"fuel"},
+    //         {5,"cubicCapacity"}
+    //     };
+    //     System.Console.WriteLine(menu.EditCar());
+    //     String chassicN = InputChssisNumber("inserire numero di telaio: ");
+    //     int n = InputNumber("inserire il numero di cosa vuoi cambiare: ");
+    //     Car CarToEdi = cars.Find(x => x.GetSetup.GetChassis == chassicN);
+    // }
+
+    internal static void SaveFile(string path)
+    {
+        List<string> lines = new();
+        cars.ForEach(x=>lines.Add(x.GetLine)); 
+        Engine.WriteFile(lines,path);
     }
 }

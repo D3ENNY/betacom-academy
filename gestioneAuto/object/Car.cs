@@ -6,6 +6,7 @@ class Car
     private readonly Model model;
     private readonly Setup setup;
     internal Setup GetSetup => setup;
+    internal Model GetModel => model;
     //internal Model
     public Car(string companyName, string modelName,string year, string chassisNumber, string? fuel, string? cubicCapacity){
         this.company = Company.GetCompList.Find(x => x.GetName.Equals(companyName)) ?? new(companyName);
@@ -19,10 +20,15 @@ class Car
         this.setup = setup;
     }
 
-    public Car(){}
+    public Car() { 
+        //the silents is golden
+    }
 
     public override string ToString()
     {
         return $"{this.company}{this.model}{this.setup}";
     }
+
+    public string GetLine => $"{this.company.Line}{this.model.Line}{this.setup.Line}";
+    
 }

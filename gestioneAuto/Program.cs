@@ -4,6 +4,7 @@ class Program
     private static readonly MenuManager menu = new();
     private const string carPath = "file/carFile/car.txt";
     private const string setuPath = "file/carFile/carCharacteristics.txt";
+    private const string newPath = "file/carFile/newFile.txt";
     static void Main(string[] args)
     {
         DataManager.InsertFileCar(carPath, setuPath);
@@ -14,8 +15,8 @@ class Program
                 menu.HandleChoise(choise);
             }
 
-        }while(choise != 7 );
-
+        }while(choise != 6 );
+        DataManager.SaveFile(newPath);
         Console.WriteLine("chiusura in corso...\nattendere prego");
         Environment.Exit(0);
     }

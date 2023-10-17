@@ -21,5 +21,7 @@ class Company
     public override string ToString(){
         return $"casa automobilistica:\n{this.name}\n====================";
     } 
+
+    public string Line => $"{this.name}";
     
 }
