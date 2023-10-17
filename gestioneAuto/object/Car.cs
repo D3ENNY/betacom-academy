@@ -1,23 +1,20 @@
 namespace gestioneAuto;
 
-class Car 
+public class Car 
 {   
-    private readonly Company company;
-    private readonly Model model;
-    private readonly Setup setup;
-    internal Setup GetSetup => setup;
-    internal Model GetModel => model;
-    //internal Model
+    public Company Company{get; private set;}
+    public Model Model{get; private set;}
+    public Setup Setup{get; private set;}
     public Car(string companyName, string modelName,string year, string chassisNumber, string? fuel, string? cubicCapacity){
-        this.company = Company.GetCompList.Find(x => x.GetName.Equals(companyName)) ?? new(companyName);
-        this.model = Model.GetModList.Find(x => x.GetName.Equals(modelName) && x.getYear.Equals(year)) ?? new(modelName, year);
-        this.setup = Setup.GetSetList.Find(x => x.GetChassis.Equals(chassisNumber)) ?? new(chassisNumber, fuel, cubicCapacity);
+        this.Company = Company.GetCompList.Find(x => x.Name.Equals(companyName)) ?? new(companyName);
+        this.Model = Model.GetModList.Find(x => x.Name.Equals(modelName) && x.getYear.Equals(year)) ?? new(modelName, year);
+        this.Setup = Setup.GetSetList.Find(x => x.ChassisNumber.Equals(chassisNumber)) ?? new(chassisNumber, fuel, cubicCapacity);
     }
 
     public Car(Company company, Model model, Setup setup){
-        this.company = company;
-        this.model = model;
-        this.setup = setup;
+        this.Company = company;
+        this.Model = model;
+        this.Setup = setup;
     }
 
     public Car() { 
@@ -26,9 +23,9 @@ class Car
 
     public override string ToString()
     {
-        return $"{this.company}{this.model}{this.setup}";
+        return $"{this.Company}{this.Model}{this.Setup}";
     }
 
-    public string GetLine => $"{this.company.Line}{this.model.Line}{this.setup.Line}";
+    public string GetLine => $"{this.Company.Line}{this.Model.Line}{this.Setup.Line}";
     
 }

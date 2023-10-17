@@ -2,26 +2,26 @@ using System.Security.Principal;
 
 namespace gestioneAuto;
 
-class Company
+public class Company
 {
     private static readonly List<Company> companyList= new();
     internal static List<Company> GetCompList => companyList;
     private static int SId = 0;
-    private readonly int id;
-    private readonly string name="";
-    internal string GetName => name;
-
+    public int Id{get; private set;}
+    public string Name{get; private set;}
 
     internal Company(string name){
-        this.name = name;
-        this.id = ++SId;
+        this.Name = name;
+        this.Id = ++SId;
         companyList.Add(this);
     }
 
+    public Company(){ }
+
     public override string ToString(){
-        return $"casa automobilistica:\n{this.name}\n====================";
+        return $"casa automobilistica:\n{this.Name}\n====================";
     } 
 
-    public string Line => $"{this.name}";
+    public string Line => $"{this.Name}";
     
 }

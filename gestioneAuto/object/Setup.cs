@@ -1,25 +1,25 @@
 namespace gestioneAuto;
 
-class Setup
+public class Setup
 {
     private static readonly List<Setup> setupList = new();
     internal static  List<Setup> GetSetList => setupList;
-    private readonly string chassisNumber;
-    internal string GetChassis => chassisNumber;
-    private readonly string? fuel;
-    private readonly int? cubicCapacity;
+    public string ChassisNumber{get; private set;}
+    public string? Fuel{get; private set;}
+    public int? CubicCapacity{get; private set;}
 
     public Setup(string chassisNumber, string? fuel, string? cubicCapacity){
-        this.chassisNumber = chassisNumber;
-        this.fuel = fuel;
-        this.cubicCapacity = int.TryParse(cubicCapacity, out _) ? int.Parse(cubicCapacity) : null;
+        this.ChassisNumber = chassisNumber;
+        this.Fuel = fuel;
+        this.CubicCapacity = int.TryParse(cubicCapacity, out _) ? int.Parse(cubicCapacity) : null;
         setupList.Add(this);
     }
 
+    public Setup() { }
     public override string ToString()
     {
-        return $"\nallestimenti:\nnumero telaio: {this.chassisNumber}\nalimentazione: {this.fuel}\ncilindrata: {this.cubicCapacity}CC";
+        return $"\nallestimenti:\nnumero telaio: {this.ChassisNumber}\nalimentazione: {this.Fuel}\ncilindrata: {this.CubicCapacity}CC";
     }
 
-    public string Line => $"{this.fuel}:{this.cubicCapacity}:{this.chassisNumber}";
+    public string Line => $"{this.Fuel}:{this.CubicCapacity}:{this.ChassisNumber}";
 }

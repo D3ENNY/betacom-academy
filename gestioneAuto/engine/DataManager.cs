@@ -1,10 +1,11 @@
 
+
 namespace gestioneAuto;
 
 class DataManager : Validate
 {
     private static List<Car> cars = new();
-    internal List<Car> getCarList => cars;
+    public static List<Car> GetCarList => cars;
     private readonly MenuManager menu = new();
 
     internal static bool InsertFileCar(string carPath, string setuPath){
@@ -211,16 +212,16 @@ class DataManager : Validate
 
     internal bool RemoveCar(){
         string search = InputChssisNumber(menu.RemoveCar()).ToLower();
-        return cars.Remove(cars.SingleOrDefault(x => x.GetSetup.GetChassis == search) ?? new Car());
+        return cars.Remove(cars.SingleOrDefault(x => x.Setup.ChassisNumber == search) ?? new Car());
     }
 
     internal void SearchCar()
     {
         string input = InputText("inserire anno di produzione o modello dell'auto da cercare: ").ToLower();
         if(int.TryParse(input, out _)){
-            cars.FindAll(x => x.GetModel.getYear.Equals(input)).ForEach(x => Console.WriteLine(x));
+            cars.FindAll(x => x.Model.getYear.Equals(input)).ForEach(x => Console.WriteLine(x));
         }else{
-            (from element in cars where element.GetModel.GetName.ToLower() == input select element).ToList().ForEach(x => Console.WriteLine(x));
+            (from element in cars where element.Model.Name.ToLower() == input select element).ToList().ForEach(x => Console.WriteLine(x));
         }
     }
 
@@ -246,4 +247,9 @@ class DataManager : Validate
         cars.ForEach(x=>lines.Add(x.GetLine)); 
         Engine.WriteFile(lines,path);
     }
-}
+
+    internal static void SaveXml(string newXmlPath)
+    {
+        Engine.WriteXmlFile(newXmlPath);
+    }
+} 

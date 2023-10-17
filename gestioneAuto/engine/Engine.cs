@@ -1,3 +1,4 @@
+    using System.Xml.Serialization;
 namespace gestioneAuto;
 class Engine
 {
@@ -18,4 +19,20 @@ class Engine
             Console.WriteLine("error");
         }
     }   
+
+    internal static void WriteXmlFile(string path){
+        try
+        {
+            XmlSerializer xml = new(DataManager.GetCarList.GetType());
+
+            using(StreamWriter sw = new(path)){
+                xml.Serialize(sw, DataManager.GetCarList);
+            }
+        }catch (System.Exception)
+        {
+            
+            throw;
+        }
+    }
+
 }

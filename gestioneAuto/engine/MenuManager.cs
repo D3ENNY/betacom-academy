@@ -73,7 +73,7 @@ class MenuManager
                 break;
             case 2:
                 //eliminazione auto
-                if(data.getCarList.Count > 0)
+                if(DataManager.GetCarList.Count > 0)
                     if(!data.RemoveCar())
                         Console.Error.WriteLine("errore nella rimozione dell'auto");
                     else Console.WriteLine("eliminazione auto effettuata");
@@ -82,13 +82,13 @@ class MenuManager
                 break;  
             case 3:
                 //ricerca auto
-                if(data.getCarList.Count > 0)
+                if(DataManager.GetCarList.Count > 0)
                     data.SearchCar();
                 ExitMod();
                 break;
             case 4: 
                 //mostra tutte le auto del concessionario
-                if(data.getCarList.Count > 0)
+                if(DataManager.GetCarList.Count > 0)
                     data.ShowCar();
                 else NoCarFound();
                 ExitMod();
