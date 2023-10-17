@@ -1,4 +1,5 @@
-﻿using static startaccademynet4.OOPTest;
+﻿using static startaccademynet4.DataSerialization;
+using static startaccademynet4.OOPTest;
 
 namespace startaccademynet4;
 internal class Program{
@@ -6,7 +7,7 @@ internal class Program{
         Console.ForegroundColor = ConsoleColor.Magenta;
         Program p = new Program();
 
-        p.test24();
+        p.test25();
     }
 
     private void exit(){
@@ -328,8 +329,14 @@ internal class Program{
     //     System.Console.WriteLine(mbt.TipoMotore());
     // }
 
-    private void test24(){
-        ClasseParticolare cp = ClasseParticolare.Instance();
-        ClasseParticolare cp1 = ClasseParticolare.Instance();
+    // private void test24(){
+    //     ClasseParticolare cp = ClasseParticolare.Instance();
+    //     ClasseParticolare cp1 = ClasseParticolare.Instance();
+    // }
+
+    private void test25(){
+        Fly f = new();
+        f.LoadFly();
+        f.SaveJson();
     }
 }

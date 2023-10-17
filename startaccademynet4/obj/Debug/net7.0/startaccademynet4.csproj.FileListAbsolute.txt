@@ -28,3 +28,5 @@
 /home/denny/Betacom Academy/pratica/startaccademynet4/obj/Debug/net7.0/startaccademynet4.pdb
 /home/denny/Betacom Academy/pratica/startaccademynet4/obj/Debug/net7.0/startaccademynet4.genruntimeconfig.cache
 /home/denny/Betacom Academy/pratica/startaccademynet4/obj/Debug/net7.0/ref/startaccademynet4.dll
+/home/denny/Betacom Academy/pratica/startaccademynet4/bin/Debug/net7.0/Newtonsoft.Json.dll
+/home/denny/Betacom Academy/pratica/startaccademynet4/obj/Debug/net7.0/startaccademynet4.csproj.CopyComplete

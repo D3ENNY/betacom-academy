@@ -1,0 +1,52 @@
+[
+  {
+    "NumeroVolo": "IT45333",
+    "Origine": "Milano",
+    "Destinazione": "Palermo",
+    "DataPartenza": "2023-10-20 13:46:00",
+    "DataArrivo": "2023-10-16 13:46:00",
+    "Capacita": 3,
+    "Cod_IATA": "EZY",
+    "Compagnia": "EasyJet"
+  },
+  {
+    "NumeroVolo": "MA00121",
+    "Origine": "Milano",
+    "Destinazione": "Palermo",
+    "DataPartenza": "2023-10-21 05:00:00",
+    "DataArrivo": "2023-06-20 04:00:00",
+    "Capacita": 1,
+    "Cod_IATA": "LH",
+    "Compagnia": "Lufthansa"
+  },
+  {
+    "NumeroVolo": "IT7",
+    "Origine": "Milano",
+    "Destinazione": "Palermo",
+    "DataPartenza": "2023-10-22 08:00:00",
+    "DataArrivo": "2023-07-11 10:00:00",
+    "Capacita": 200,
+    "Cod_IATA": "IT",
+    "Compagnia": "ITA"
+  },
+  {
+    "NumeroVolo": "IT4533",
+    "Origine": "Milano",
+    "Destinazione": "Palermo",
+    "DataPartenza": "2023-10-26 13:44:00",
+    "DataArrivo": "2023-10-16 13:46:00",
+    "Capacita": 56,
+    "Cod_IATA": "IT",
+    "Compagnia": "ITA"
+  },
+  {
+    "NumeroVolo": "IT34",
+    "Origine": "Milano",
+    "Destinazione": "Palermo",
+    "DataPartenza": "2023-12-10 09:00:00",
+    "DataArrivo": "2023-12-10 10:15:00",
+    "Capacita": 250,
+    "Cod_IATA": "IT",
+    "Compagnia": "ITA"
+  }
+]
