@@ -7,7 +7,7 @@ internal class Program{
         Console.ForegroundColor = ConsoleColor.Magenta;
         Program p = new Program();
 
-        p.test25();
+        p.test26();
     }
 
     private void exit(){
@@ -334,9 +334,14 @@ internal class Program{
     //     ClasseParticolare cp1 = ClasseParticolare.Instance();
     // }
 
-    private void test25(){
-        Fly f = new();
-        f.LoadFly();
-        f.SaveJson();
+    // private void test25(){
+    //     Fly f = new();
+    //     f.LoadFly();
+    //     f.SaveJson();
+    // }
+
+    private void test26(){
+        Encrypt e = new();
+        System.Console.WriteLine($"hash di Pippo: {e.EncryptString("pippo")}");
     }
 }

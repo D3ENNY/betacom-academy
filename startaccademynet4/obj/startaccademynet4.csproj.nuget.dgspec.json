@@ -38,6 +38,10 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Cryptography.KeyDerivation": {
+              "target": "Package",
+              "version": "[7.0.12, )"
+            },
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.3, )"
@@ -57,7 +61,7 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[7.0.11, 7.0.11]"
+              "version": "[7.0.12, 7.0.12]"
             }
           ],
           "frameworkReferences": {
@@ -65,7 +69,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.111/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.112/RuntimeIdentifierGraph.json"
         }
       }
     }

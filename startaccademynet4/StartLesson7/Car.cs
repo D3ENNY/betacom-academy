@@ -3,12 +3,12 @@ using System.ComponentModel.DataAnnotations;
 
 namespace startaccademynet4;
 
-class Car2
-{
-    [Required]  //annotation, id deve essere perforza dato
-    [Key]       //annotation, questo ID è il corrispondente di una chiave
-    [MaxLength(30)] //annotation, questo ID può avere lenght max a 30
-    readonly int id ;
+    class Car2
+    {
+        [Required]  //annotation, id deve essere perforza dato
+        [Key]       //annotation, questo ID è il corrispondente di una chiave
+        [MaxLength(30)] //annotation, questo ID può avere lenght max a 30
+        readonly int id ;
     [MinLength(2)] //annotation, permette al nome di avere almeno 2 caratteri
     readonly string name="";
     [DisplayName("anno di produzione dell'auto")]
