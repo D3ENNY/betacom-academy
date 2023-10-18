@@ -30,3 +30,5 @@
 /home/denny/Betacom Academy/pratica/startaccademynet4/obj/Debug/net7.0/ref/startaccademynet4.dll
 /home/denny/Betacom Academy/pratica/startaccademynet4/bin/Debug/net7.0/Newtonsoft.Json.dll
 /home/denny/Betacom Academy/pratica/startaccademynet4/obj/Debug/net7.0/startaccademynet4.csproj.CopyComplete
+/home/denny/Betacom Academy/pratica/startaccademynet4/bin/Debug/net7.0/Microsoft.AspNetCore.Cryptography.Internal.dll
+/home/denny/Betacom Academy/pratica/startaccademynet4/bin/Debug/net7.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll

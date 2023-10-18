@@ -26,7 +26,7 @@ class Encrypt
         return strB.ToString();
     }
 
-    internal string EncryptSaltString(string sValue){
+    internal KeyValuePair<string,string> EncryptSaltString(string sValue){
         byte[] byteSalt = new byte[16];
         string EncResult = string.Empty;
         string EncSalt = string.Empty;
@@ -49,6 +49,6 @@ class Encrypt
         {
             throw;
         }
-        return EncSalt;
+        return new KeyValuePair<string, string>(EncSalt, EncResult);
     }
 }
