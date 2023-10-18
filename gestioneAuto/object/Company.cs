@@ -1,5 +1,3 @@
-using System.Security.Principal;
-
 namespace gestioneAuto;
 
 public class Company
@@ -7,8 +5,8 @@ public class Company
     private static readonly List<Company> companyList= new();
     internal static List<Company> GetCompList => companyList;
     private static int SId = 0;
-    public int Id{get; private set;}
-    public string Name{get; private set;}
+    public int Id{get; set;}
+    public string Name{get; set;}
 
     internal Company(string name){
         this.Name = name;

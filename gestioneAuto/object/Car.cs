@@ -2,9 +2,9 @@ namespace gestioneAuto;
 
 public class Car 
 {   
-    public Company Company{get; private set;}
-    public Model Model{get; private set;}
-    public Setup Setup{get; private set;}
+    public Company Company{get; set;}
+    public Model Model{get; set;}
+    public Setup Setup{get; set;}
     public Car(string companyName, string modelName,string year, string chassisNumber, string? fuel, string? cubicCapacity){
         this.Company = Company.GetCompList.Find(x => x.Name.Equals(companyName)) ?? new(companyName);
         this.Model = Model.GetModList.Find(x => x.Name.Equals(modelName) && x.getYear.Equals(year)) ?? new(modelName, year);

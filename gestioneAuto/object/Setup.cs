@@ -4,9 +4,9 @@ public class Setup
 {
     private static readonly List<Setup> setupList = new();
     internal static  List<Setup> GetSetList => setupList;
-    public string ChassisNumber{get; private set;}
-    public string? Fuel{get; private set;}
-    public int? CubicCapacity{get; private set;}
+    public string ChassisNumber{get; set;}
+    public string? Fuel{get; set;}
+    public int? CubicCapacity{get; set;}
 
     public Setup(string chassisNumber, string? fuel, string? cubicCapacity){
         this.ChassisNumber = chassisNumber;

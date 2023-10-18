@@ -1,8 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ArrayOfCar xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Car />
-  <Car />
-  <Car />
-  <Car />
-  <Car />
+  <Car>
+    <Company>
+      <Id>1</Id>
+      <Name>Bmw</Name>
+    </Company>
+    <Model>
+      <Id>1</Id>
+      <Name>iX4</Name>
+      <Year>2015</Year>
+    </Model>
+    <Setup>
+      <ChassisNumber>abc12345</ChassisNumber>
+      <CubicCapacity xsi:nil="true" />
+    </Setup>
+  </Car>
+  <Car>
+    <Company>
+      <Id>2</Id>
+      <Name>Saab</Name>
+    </Company>
+    <Model>
+      <Id>2</Id>
+      <Name>93</Name>
+      <Year>2003</Year>
+    </Model>
+    <Setup>
+      <ChassisNumber>eer12225</ChassisNumber>
+      <Fuel>TurboDiesel</Fuel>
+      <CubicCapacity>1900</CubicCapacity>
+    </Setup>
+  </Car>
+  <Car>
+    <Company>
+      <Id>3</Id>
+      <Name>Mercedes</Name>
+    </Company>
+    <Model>
+      <Id>3</Id>
+      <Name>C200</Name>
+      <Year>2002</Year>
+    </Model>
+    <Setup>
+      <ChassisNumber>zdf11125</ChassisNumber>
+      <Fuel>Benzina</Fuel>
+      <CubicCapacity>2000</CubicCapacity>
+    </Setup>
+  </Car>
+  <Car>
+    <Company>
+      <Id>4</Id>
+      <Name>Porsche</Name>
+    </Company>
+    <Model>
+      <Id>4</Id>
+      <Name>911 4S</Name>
+      <Year>1980</Year>
+    </Model>
+    <Setup>
+      <ChassisNumber>rty99074</ChassisNumber>
+      <Fuel>TurboBenzina</Fuel>
+      <CubicCapacity>3000</CubicCapacity>
+    </Setup>
+  </Car>
+  <Car>
+    <Company>
+      <Id>5</Id>
+      <Name>Volvo</Name>
+    </Company>
+    <Model>
+      <Id>5</Id>
+      <Name>C 64</Name>
+      <Year>1995</Year>
+    </Model>
+    <Setup>
+      <ChassisNumber>plk03611</ChassisNumber>
+      <Fuel>Diesel</Fuel>
+      <CubicCapacity>2200</CubicCapacity>
+    </Setup>
+  </Car>
 </ArrayOfCar>
