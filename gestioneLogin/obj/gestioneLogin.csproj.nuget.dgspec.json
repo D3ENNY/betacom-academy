@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/denny/Betacom Academy/gestioneAuto/gestioneAuto.csproj": {}
+    "/home/denny/Betacom Academy/pratica/gestioneLogin/gestioneLogin.csproj": {}
   },
   "projects": {
-    "/home/denny/Betacom Academy/gestioneAuto/gestioneAuto.csproj": {
+    "/home/denny/Betacom Academy/pratica/gestioneLogin/gestioneLogin.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/denny/Betacom Academy/gestioneAuto/gestioneAuto.csproj",
-        "projectName": "gestioneAuto",
-        "projectPath": "/home/denny/Betacom Academy/gestioneAuto/gestioneAuto.csproj",
+        "projectUniqueName": "/home/denny/Betacom Academy/pratica/gestioneLogin/gestioneLogin.csproj",
+        "projectName": "gestioneLogin",
+        "projectPath": "/home/denny/Betacom Academy/pratica/gestioneLogin/gestioneLogin.csproj",
         "packagesPath": "/home/denny/.nuget/packages/",
-        "outputPath": "/home/denny/Betacom Academy/gestioneAuto/obj/",
+        "outputPath": "/home/denny/Betacom Academy/pratica/gestioneLogin/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/denny/.nuget/NuGet/NuGet.Config"
@@ -51,7 +51,7 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[7.0.11, 7.0.11]"
+              "version": "[7.0.12, 7.0.12]"
             }
           ],
           "frameworkReferences": {
@@ -59,7 +59,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.111/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.112/RuntimeIdentifierGraph.json"
         }
       }
     }

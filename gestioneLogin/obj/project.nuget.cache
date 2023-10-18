@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "4oIKuOFwsBCrIP+kyOwon0jwEZSguFNXSNwJgiD5fs3+BA+XQUih7UQuDoPJbLmLcdd9INHXxXrayMeuVWwwGw==",
+  "success": true,
+  "projectFilePath": "/home/denny/Betacom Academy/pratica/gestioneLogin/gestioneLogin.csproj",
+  "expectedPackageFiles": [
+    "/home/denny/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.12/microsoft.aspnetcore.app.ref.7.0.12.nupkg.sha512"
+  ],
+  "logs": []
+}
