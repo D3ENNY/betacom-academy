@@ -7,7 +7,7 @@ class Enumerators
         Benzina,
         Diesel,
         Turbobenzina,
-        Metano,
+        Metano, 
         Gas,
         Elettrico
     }
