@@ -1,0 +1,15 @@
+/home/denny/Betacom Academy/betacom-academy/gestioneLogin/bin/Debug/net7.0/gestioneLogin
+/home/denny/Betacom Academy/betacom-academy/gestioneLogin/bin/Debug/net7.0/gestioneLogin.deps.json
+/home/denny/Betacom Academy/betacom-academy/gestioneLogin/bin/Debug/net7.0/gestioneLogin.runtimeconfig.json
+/home/denny/Betacom Academy/betacom-academy/gestioneLogin/bin/Debug/net7.0/gestioneLogin.dll
+/home/denny/Betacom Academy/betacom-academy/gestioneLogin/bin/Debug/net7.0/gestioneLogin.pdb
+/home/denny/Betacom Academy/betacom-academy/gestioneLogin/obj/Debug/net7.0/gestioneLogin.csproj.AssemblyReference.cache
+/home/denny/Betacom Academy/betacom-academy/gestioneLogin/obj/Debug/net7.0/gestioneLogin.GeneratedMSBuildEditorConfig.editorconfig
+/home/denny/Betacom Academy/betacom-academy/gestioneLogin/obj/Debug/net7.0/gestioneLogin.AssemblyInfoInputs.cache
+/home/denny/Betacom Academy/betacom-academy/gestioneLogin/obj/Debug/net7.0/gestioneLogin.AssemblyInfo.cs
+/home/denny/Betacom Academy/betacom-academy/gestioneLogin/obj/Debug/net7.0/gestioneLogin.csproj.CoreCompileInputs.cache
+/home/denny/Betacom Academy/betacom-academy/gestioneLogin/obj/Debug/net7.0/gestioneLogin.dll
+/home/denny/Betacom Academy/betacom-academy/gestioneLogin/obj/Debug/net7.0/refint/gestioneLogin.dll
+/home/denny/Betacom Academy/betacom-academy/gestioneLogin/obj/Debug/net7.0/gestioneLogin.pdb
+/home/denny/Betacom Academy/betacom-academy/gestioneLogin/obj/Debug/net7.0/gestioneLogin.genruntimeconfig.cache
+/home/denny/Betacom Academy/betacom-academy/gestioneLogin/obj/Debug/net7.0/ref/gestioneLogin.dll

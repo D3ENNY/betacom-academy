@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/denny/Betacom Academy/pratica/gestioneLogin/gestioneLogin.csproj": {}
+    "/home/denny/Betacom Academy/betacom-academy/gestioneLogin/gestioneLogin.csproj": {}
   },
   "projects": {
-    "/home/denny/Betacom Academy/pratica/gestioneLogin/gestioneLogin.csproj": {
+    "/home/denny/Betacom Academy/betacom-academy/gestioneLogin/gestioneLogin.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/denny/Betacom Academy/pratica/gestioneLogin/gestioneLogin.csproj",
+        "projectUniqueName": "/home/denny/Betacom Academy/betacom-academy/gestioneLogin/gestioneLogin.csproj",
         "projectName": "gestioneLogin",
-        "projectPath": "/home/denny/Betacom Academy/pratica/gestioneLogin/gestioneLogin.csproj",
+        "projectPath": "/home/denny/Betacom Academy/betacom-academy/gestioneLogin/gestioneLogin.csproj",
         "packagesPath": "/home/denny/.nuget/packages/",
-        "outputPath": "/home/denny/Betacom Academy/pratica/gestioneLogin/obj/",
+        "outputPath": "/home/denny/Betacom Academy/betacom-academy/gestioneLogin/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/denny/.nuget/NuGet/NuGet.Config"
