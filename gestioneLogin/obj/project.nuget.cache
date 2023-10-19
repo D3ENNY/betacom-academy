@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "IsivVVjBIAWrFHquCrWjS5csUtTu45BgAeAKQbKpxAxVxUxHhpOOOuKSKMr5Gy0JsXFEy/2V8Q6ugL82yBRsqw==",
+  "dgSpecHash": "EoWzjPhGrUDX/tQ9TF9yH1kGEMLXi8fXsWHMkHoWWq/h9rQMS8aDH0pJ03KPfyJCO1pg97C0HM4hW7VP/p95nA==",
   "success": true,
   "projectFilePath": "/home/denny/Betacom Academy/betacom-academy/gestioneLogin/gestioneLogin.csproj",
   "expectedPackageFiles": [
+    "/home/denny/.nuget/packages/microsoft.aspnetcore.cryptography.internal/7.0.12/microsoft.aspnetcore.cryptography.internal.7.0.12.nupkg.sha512",
+    "/home/denny/.nuget/packages/microsoft.aspnetcore.cryptography.keyderivation/7.0.12/microsoft.aspnetcore.cryptography.keyderivation.7.0.12.nupkg.sha512",
     "/home/denny/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.12/microsoft.aspnetcore.app.ref.7.0.12.nupkg.sha512"
   ],
   "logs": []
