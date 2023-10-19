@@ -2,7 +2,7 @@
 using System.Xml.Linq;
 using System.Xml.Serialization;
 
-namespace ToolBoxLibrary;
+namespace ToolBoxLibrary.FileBox;
 public class FileBox
 {
     /// <summary>
