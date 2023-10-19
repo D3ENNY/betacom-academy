@@ -41,7 +41,7 @@ public class FileBox
     /// <param name="path">Il percorso del file XML in cui scrivere i dati serializzati.</param>
     /// <return> void </return>
 
-    internal void WriteXml<T>(List<T> list, string path) where T : List<T>
+    public void WriteXml<T>(List<T> list, string path) where T : List<T>
     {
         try
         {
@@ -64,7 +64,7 @@ public class FileBox
     /// <param name="path">Il percorso del documento XML esistente in cui aggiungere l'elemento.</param>
     /// <return> void </return>
 
-    internal void AppendXml<T>(T element, string path)
+    public void AppendXml<T>(T element, string path)
     {
         XDocument xmlDoc = XDocument.Load(path);
 
