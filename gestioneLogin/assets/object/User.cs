@@ -4,10 +4,7 @@ namespace gestioneLogin.assets.obj;
 
 public class User
 {
-    [Required]
     public string Username{get;set;} =  string.Empty;
-
-    [Required]
     public string Salt{get;set;} = "";
 
     public string Hash {get;set;} = "";
@@ -22,6 +19,6 @@ public class User
     }
 
     public override string ToString(){
-        return $"u: {this.Username} - h: {this.Hash}";
+        return $"u: {this.Username} - h: {this.Hash} - s: {this.Salt}";
     }
 }

@@ -36,13 +36,12 @@ class Crypt{
         byte[] salt = Convert.FromBase64String(hashedSalt.Key);
         byte[] hash = Convert.FromBase64String(hashedSalt.Value);
 
-
         byte[] newHash = KeyDerivation.Pbkdf2(
             password: enteredPassword,
             salt: salt,
             prf: KeyDerivationPrf.HMACSHA256,
             iterationCount: 10000,
-            numBytesRequested: hash.Length
+            numBytesRequested: 16
         );
 
         return newHash.SequenceEqual(hash);

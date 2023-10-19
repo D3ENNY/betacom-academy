@@ -4,5 +4,27 @@
     <Username>denys</Username>
     <Salt>jJOhAttL1rA1ruQ5WzfhkA==</Salt>
     <Hash>F7gK2e0iyU0kbVuHX350Fw==</Hash>
+    <!--pippo-->
+  </User>
+  <User>
+    <Username>pippo</Username>
+    <Salt>MmeUx3ittDsjmBEY3146EA==</Salt>
+    <Hash>+Tw6QCpwSdI+fRJYE5bsQQ==</Hash>
+    <!--1234-->
+  </User>
+  <User>
+    <Username>luigi</Username>
+    <Salt>GfasJTM0se4Qqw0GGqwEGg==</Salt>
+    <Hash>9hwQOovZ2+WeUgLnewAerw==</Hash>
+  </User>
+  <User>
+    <Username>maria</Username>
+    <Salt>y8U5U/9dikyJtIoTY/uXGA==</Salt>
+    <Hash>GS+g87SZHHI7a4uiISayDw==</Hash>
+  </User>
+  <User>
+    <Username>flavia</Username>
+    <Salt>dh6ifTldnC2Y3ErmjnyiNw==</Salt>
+    <Hash>E1+17I258qyinOfI5s0f3w==</Hash>
   </User>
 </ArrayOfUser>
