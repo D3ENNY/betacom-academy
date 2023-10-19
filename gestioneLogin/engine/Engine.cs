@@ -36,7 +36,7 @@ class Engine
         }
         catch (System.Exception)
         {
-            throw;
+            Console.Error.WriteLine("Errore durante la deserializzazione: " + ex.Message);
         }
     }
 
