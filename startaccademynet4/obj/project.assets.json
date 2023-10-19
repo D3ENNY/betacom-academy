@@ -128,11 +128,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/denny/Betacom Academy/pratica/startaccademynet4/startaccademynet4.csproj",
+      "projectUniqueName": "/home/denny/Betacom Academy/betacom-academy/startaccademynet4/startaccademynet4.csproj",
       "projectName": "startaccademynet4",
-      "projectPath": "/home/denny/Betacom Academy/pratica/startaccademynet4/startaccademynet4.csproj",
+      "projectPath": "/home/denny/Betacom Academy/betacom-academy/startaccademynet4/startaccademynet4.csproj",
       "packagesPath": "/home/denny/.nuget/packages/",
-      "outputPath": "/home/denny/Betacom Academy/pratica/startaccademynet4/obj/",
+      "outputPath": "/home/denny/Betacom Academy/betacom-academy/startaccademynet4/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/denny/.nuget/NuGet/NuGet.Config"

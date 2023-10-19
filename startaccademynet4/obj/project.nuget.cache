@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0iO6/N8k7tFrSbELvvTRhvDlS5afiAgFLPoTVI15nMDysJBKaLv9AMT4JfXu+xIC8bTitJM4hfZh1LMTMI6lKg==",
+  "dgSpecHash": "MUCSkvlTQJw+LJ5Hla99DJ81tsutRMw1i7vqbnq/WMBkoX9oss69tvqwno5Lz6708LKrieWTNk4sGnp4NLc4ig==",
   "success": true,
-  "projectFilePath": "/home/denny/Betacom Academy/pratica/startaccademynet4/startaccademynet4.csproj",
+  "projectFilePath": "/home/denny/Betacom Academy/betacom-academy/startaccademynet4/startaccademynet4.csproj",
   "expectedPackageFiles": [
     "/home/denny/.nuget/packages/microsoft.aspnetcore.cryptography.internal/7.0.12/microsoft.aspnetcore.cryptography.internal.7.0.12.nupkg.sha512",
     "/home/denny/.nuget/packages/microsoft.aspnetcore.cryptography.keyderivation/7.0.12/microsoft.aspnetcore.cryptography.keyderivation.7.0.12.nupkg.sha512",
