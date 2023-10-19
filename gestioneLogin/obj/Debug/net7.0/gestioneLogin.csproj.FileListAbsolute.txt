@@ -13,3 +13,6 @@
 /home/denny/Betacom Academy/betacom-academy/gestioneLogin/obj/Debug/net7.0/gestioneLogin.pdb
 /home/denny/Betacom Academy/betacom-academy/gestioneLogin/obj/Debug/net7.0/gestioneLogin.genruntimeconfig.cache
 /home/denny/Betacom Academy/betacom-academy/gestioneLogin/obj/Debug/net7.0/ref/gestioneLogin.dll
+/home/denny/Betacom Academy/betacom-academy/gestioneLogin/bin/Debug/net7.0/Microsoft.AspNetCore.Cryptography.Internal.dll
+/home/denny/Betacom Academy/betacom-academy/gestioneLogin/bin/Debug/net7.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+/home/denny/Betacom Academy/betacom-academy/gestioneLogin/obj/Debug/net7.0/gestioneLogin.csproj.CopyComplete

@@ -6,29 +6,31 @@ using gestioneLogin.assets.constant;
 namespace gestioneLogin.engine;
 class Engine
 {
-    internal static List<T> ReadXml<T>(List<T> list)where T: List<T>
+    public static List<T> ReadXml<T>()
     {
+        List<T> result = new();
+
         try
         {
-            XmlSerializer xml = new(list.GetType());
+            XmlSerializer serializer = new(typeof(List<T>));
 
-            using StreamReader sr = new(Constant.Pathxml);
-            list = xml.Deserialize(sr) as List<T> ?? new();
+            using FileStream fileStream = new(Constant.Pathxml, FileMode.Open);
+            result = serializer.Deserialize(fileStream) as List<T> ?? new();
         }
-        catch (System.Exception)
+        catch (Exception ex)
         {
-            throw;
+            Console.Error.WriteLine("Errore durante la deserializzazione: " + ex.Message);
         }
 
-        return list;
+        return result;
     }
 
-    internal static void WriteXml<T>(List<T> list) where T: List<T>
+    internal static void WriteXml<T>(List<T> list) where T : List<T>
     {
         try
         {
             XmlSerializer xml = new(list.GetType());
-            
+
             using StreamWriter sw = new(Constant.Pathxml);
             xml.Serialize(sw, list);
         }
@@ -42,13 +44,17 @@ class Engine
     {
         XDocument xmlDoc = XDocument.Load(Constant.Pathxml);
 
-        XElement el = new(element.GetType().ToString());
+        XElement el = new(element.GetType().Name);
 
         List<PropertyInfo> getters = element.GetType().GetProperties()
         .Where(p => p.CanRead)
         .ToList();
 
-        getters.ForEach(x => el.Add(x.Name, x.GetValue(element)));
+        getters.ForEach(x => {
+            XElement childEl = new XElement(x.Name);
+            childEl.Value = x.GetValue(element)?.ToString() ?? string.Empty;
+            el.Add(childEl);
+        });
 
         xmlDoc.Root.Add(el);
 

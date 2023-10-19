@@ -1,8 +1,10 @@
+using gestioneLogin.assets.obj;
+
 namespace gestioneLogin.engine;
 
 class MenuManager
 {
-    private static DataManager data = new();
+    private static readonly DataManager data = new();
     internal void Show()
     {
         Console.Clear();
@@ -17,12 +19,41 @@ class MenuManager
             inserire numero:     
         ");
     }
+
+    private static void NewUser(){
+        Console.Clear();
+        Console.WriteLine(@"
+            ====================
+                nuovo utente        
+            ====================
+        ");
+    }
+
+    internal static void UserExistError(){
+        Console.Clear();
+        Console.WriteLine(@"
+            =====================
+             utente già presente        
+            =====================
+        ");
+    }
+
+    private void ExitMod(){
+        Console.WriteLine("premere un tasto per continuare:");
+        Console.ReadKey();
+    }
+
+
     internal void HandleChoise(int choise)
     {
         switch(choise){
             case 1:
                 //Register User
-
+                NewUser();
+                Console.WriteLine("inserire Username: ");
+                string name = Console.ReadLine()!;
+                data.RegisterUser(name);
+                ExitMod();
                 break;
             case 2: 
                 //Login User
