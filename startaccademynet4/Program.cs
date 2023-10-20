@@ -1,6 +1,9 @@
-﻿using ToolBoxLibrary.TextBox;
-using static startaccademynet4.DataSerialization;
+﻿using static startaccademynet4.DataSerialization;
 using static startaccademynet4.OOPTest;
+
+using ToolBoxLibrary.FileBox;
+using ToolBoxLibrary.TextBox;
+using NLogger;
 
 namespace startaccademynet4;
 internal class Program{
@@ -8,7 +11,7 @@ internal class Program{
         Console.ForegroundColor = ConsoleColor.Magenta;
         Program p = new();
 
-        p.test28();
+        p.test29();
 
     }
 
@@ -54,12 +57,12 @@ internal class Program{
 
     // private void test4(){
     //     double n1 = 0;
-    //     double n2 = 0;  
+    //     double n2 = 0;
     //     try{
     //         Console.WriteLine("inserire n1 e n2: ");
     //         if(double.TryParse(Console.ReadLine(), out n1) && double.TryParse(Console.ReadLine(), out n2))
     //             Console.WriteLine($"output: {MathFunction.computeExponent(n1,n2)}");
-    //         else 
+    //         else
     //             Console.WriteLine("error to write in console some parameters");
     //     }
     //     catch(IOException e){
@@ -87,7 +90,7 @@ internal class Program{
 
     // private void test6(){
     //     double n1 = 0;
-    //     double n2 = 0;  
+    //     double n2 = 0;
     //     bool flag = true;
     //     try{
     //         do{
@@ -168,7 +171,7 @@ internal class Program{
 
     // private void test8(){
     //     DateTime date = DateTime.Now;
-    //     Console.WriteLine($"formato data standard: {date}\n" + 
+    //     Console.WriteLine($"formato data standard: {date}\n" +
     //                       $"formato data corto: {date.ToShortDateString()} - {date.ToShortTimeString()}\n" +
     //                       $"La data tra tre giorni: {date.AddDays(3)}");
     // }
@@ -231,7 +234,7 @@ internal class Program{
     //     System.Console.WriteLine(str.Substring(0, str.IndexOf("fortissima")));
     //     System.Console.WriteLine(str[..str.IndexOf("fortissima")]);
 
-    //     string[] sTest = str.Split(" "); 
+    //     string[] sTest = str.Split(" ");
     //     Array.ForEach(sTest, x => System.Console.WriteLine(x));
     // }
 
@@ -288,8 +291,8 @@ internal class Program{
     //LInQ
     // private void test20(){
     //     List<Student> students = new List<Student>(){
-    //         new("mario", "rossi"), 
-    //         new("luca", "verdi"), 
+    //         new("mario", "rossi"),
+    //         new("luca", "verdi"),
     //         new("mario", "bianchi")
     //      };
 
@@ -353,10 +356,15 @@ internal class Program{
     //     System.Console.WriteLine(keyValue);
     // }
 
-    private void test28(){
-        string? s = null;
-        System.Console.WriteLine("string".Capitalize());
-        System.Console.WriteLine("".Capitalize());
-        System.Console.WriteLine(s.Capitalize());
+    // private void test28(){
+    //     string? s = null;
+    //     System.Console.WriteLine("string".Capitalize());
+    //     System.Console.WriteLine("".Capitalize());
+    //     System.Console.WriteLine(s.Capitalize());
+    // }
+
+    private void test29(){
+        Logger logger = new();
+        logger.Info("test");
     }
 }

@@ -15,6 +15,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ToolBoxLibrary\ToolBoxLibrary.csproj" />
+    <ProjectReference Include="..\..\..\projects\C#\ToolBoxLibrary\ToolBoxLibrary.csproj" />
   </ItemGroup>
 
 </Project>

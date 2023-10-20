@@ -52,6 +52,16 @@
         "runtime": {
           "lib/netcoreapp3.1/NLogger.dll": {}
         }
+      },
+      "ToolBoxLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/ToolBoxLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ToolBoxLibrary.dll": {}
+        }
       }
     }
   },
@@ -135,13 +145,19 @@
         "nlogger.1.1.0.nupkg.sha512",
         "nlogger.nuspec"
       ]
+    },
+    "ToolBoxLibrary/1.0.0": {
+      "type": "project",
+      "path": "../../../projects/C#/ToolBoxLibrary/ToolBoxLibrary.csproj",
+      "msbuildProject": "../../../projects/C#/ToolBoxLibrary/ToolBoxLibrary.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
       "Microsoft.AspNetCore.Cryptography.KeyDerivation >= 7.0.12",
       "Newtonsoft.Json >= 13.0.3",
-      "Nlogger >= 1.1.0"
+      "Nlogger >= 1.1.0",
+      "ToolBoxLibrary >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -168,7 +184,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/home/denny/projects/C#/ToolBoxLibrary/ToolBoxLibrary.csproj": {
+              "projectPath": "/home/denny/projects/C#/ToolBoxLibrary/ToolBoxLibrary.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
