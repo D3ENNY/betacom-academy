@@ -5,7 +5,7 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "startaccademynet4", "startaccademynet4.csproj", "{91415532-2011-47F1-AF73-935B47C6B8F1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToolBoxLibrary", "..\ToolBoxLibrary\ToolBoxLibrary.csproj", "{39CB1DE1-798E-4BF3-A533-EFCDCD631902}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToolBoxLibrary", "..\..\..\projects\C#\ToolBoxLibrary\ToolBoxLibrary.csproj", "{BBBCFB17-1449-4C0C-B28D-5DBCF4853CFC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,5 +24,9 @@ Global
 		{39CB1DE1-798E-4BF3-A533-EFCDCD631902}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{39CB1DE1-798E-4BF3-A533-EFCDCD631902}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{39CB1DE1-798E-4BF3-A533-EFCDCD631902}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBBCFB17-1449-4C0C-B28D-5DBCF4853CFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBBCFB17-1449-4C0C-B28D-5DBCF4853CFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBBCFB17-1449-4C0C-B28D-5DBCF4853CFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBBCFB17-1449-4C0C-B28D-5DBCF4853CFC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
