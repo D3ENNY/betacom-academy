@@ -3,6 +3,8 @@ using System.Xml;
 using System.Xml.Linq;
 using System.Xml.Serialization;
 
+using ToolBoxLibrary.InternalFunc;
+
 namespace ToolBoxLibrary.FileBox;
 public class FileBox
 {
@@ -32,15 +34,15 @@ public class FileBox
         }
         catch (FileNotFoundException ex)
         {
-            PrintException("Il file specificato non è stato trovato.", ex);
+            ErrorManager.PrintException("Il file specificato non è stato trovato.", ex);
         }
         catch (InvalidOperationException ex)
         {
-            PrintException("Si è verificato un errore durante la deserializzazione.", ex);
+            ErrorManager.PrintException("Si è verificato un errore durante la deserializzazione.", ex);
         }
         catch (Exception ex)
         {
-            PrintException("Errore generico durante la deserializzazione:", ex);
+            ErrorManager.PrintException("Errore generico durante la deserializzazione:", ex);
         }
 
         return result;
@@ -68,15 +70,15 @@ public class FileBox
         }
         catch (InvalidOperationException ex)
         {
-            PrintException("Errore durante la serializzazione.", ex);
+            ErrorManager.PrintException("Errore durante la serializzazione.", ex);
         }
         catch (IOException ex)
         {
-            PrintException("Errore di I/O durante la serializzazione.", ex);
+            ErrorManager.PrintException("Errore di I/O durante la serializzazione.", ex);
         }
         catch (Exception ex)
         {
-            PrintException("Errore generico durante la serializzazione.", ex);
+            ErrorManager.PrintException("Errore generico durante la serializzazione.", ex);
         }
     }
 
@@ -110,27 +112,15 @@ public class FileBox
         }
         catch (FileNotFoundException ex)
         {
-            PrintException("Errore: Il file specificato non è stato trovato.", ex);
+            ErrorManager.PrintException("Errore: Il file specificato non è stato trovato.", ex);
         }
         catch (XmlException ex)
         {
-            PrintException("Errore durante il caricamento del documento XML.", ex);
+            ErrorManager.PrintException("Errore durante il caricamento del documento XML.", ex);
         }
         catch (Exception ex)
         {
-            PrintException("Errore generico durante l'operazione di append XML.", ex);
+            ErrorManager.PrintException("Errore generico durante l'operazione di append XML.", ex);
         }
-    }
-
-    /// <summary>
-    /// Stampa un messaggio di errore e il messaggio dell'eccezione su Console.Error in rosso.
-    /// </summary>
-    /// <param name="errorMessage">Messaggio di errore personalizzato.</param>
-    /// <param name="ex">Eccezione da stampare.</param>
-    /// <return> Void </return>
-    private void PrintException(string error, Exception ex){
-        Console.ForegroundColor = ConsoleColor.Red;
-        Console.Error.WriteLine($"Errore: {error}\nMessaggio di Error: {ex.Message}");
-        Console.ForegroundColor = ConsoleColor.White;
     }
 }

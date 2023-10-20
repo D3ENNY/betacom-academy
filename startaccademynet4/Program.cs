@@ -1,14 +1,14 @@
-﻿using static startaccademynet4.DataSerialization;
+﻿using ToolBoxLibrary.TextBox;
+using static startaccademynet4.DataSerialization;
 using static startaccademynet4.OOPTest;
-using ToolBoxLibrary.FileBox;
 
 namespace startaccademynet4;
 internal class Program{
     static void Main(string[] args){
         Console.ForegroundColor = ConsoleColor.Magenta;
-        Program p = new Program();
+        Program p = new();
 
-        p.test27();
+        p.test28();
 
     }
 
@@ -347,9 +347,13 @@ internal class Program{
     //     System.Console.WriteLine($"hash di Pippo: {e.EncryptString("pippo")}");
     // }
 
-    private void test27(){
-        Encrypt e = new();
-        KeyValuePair<string,string> keyValue = e.EncryptSaltString("pippo");
-        System.Console.WriteLine(keyValue);
+    // private void test27(){
+    //     Encrypt e = new();
+    //     KeyValuePair<string,string> keyValue = e.EncryptSaltString("pippo");
+    //     System.Console.WriteLine(keyValue);
+    // }
+
+    private void test28(){
+        System.Console.WriteLine("string".Capitalize());
     }
 }
