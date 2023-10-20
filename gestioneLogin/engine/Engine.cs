@@ -34,7 +34,7 @@ class Engine
             using StreamWriter sw = new(Constant.Pathxml);
             xml.Serialize(sw, list);
         }
-        catch (System.Exception)
+        catch (System.Exception ex)
         {
             Console.Error.WriteLine("Errore durante la deserializzazione: " + ex.Message);
         }
@@ -44,20 +44,21 @@ class Engine
     {
         XDocument xmlDoc = XDocument.Load(Constant.Pathxml);
 
-        XElement el = new(element.GetType().Name);
+        if(xmlDoc != null && xmlDoc.Root != null && element != null){
+            XElement el = new(element.GetType().Name);
 
-        List<PropertyInfo> getters = element.GetType().GetProperties()
-        .Where(p => p.CanRead)
-        .ToList();
+            List<PropertyInfo> getters = element.GetType().GetProperties()
+            .Where(p => p.CanRead)
+            .ToList();
 
-        getters.ForEach(x => {
-            XElement childEl = new XElement(x.Name);
-            childEl.Value = x.GetValue(element)?.ToString() ?? string.Empty;
-            el.Add(childEl);
-        });
+            getters.ForEach(x => {
+                XElement childEl = new(x.Name)
+                { Value = x.GetValue(element)?.ToString() ?? string.Empty };
+                el.Add(childEl);
+            });
 
-        xmlDoc.Root.Add(el);
-
-        xmlDoc.Save(Constant.Pathxml);
+            xmlDoc.Root.Add(el);
+            xmlDoc.Save(Constant.Pathxml);
+        }
     }
 }

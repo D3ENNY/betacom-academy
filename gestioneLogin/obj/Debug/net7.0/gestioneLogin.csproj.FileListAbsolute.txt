@@ -16,3 +16,5 @@
 /home/denny/Betacom Academy/betacom-academy/gestioneLogin/bin/Debug/net7.0/Microsoft.AspNetCore.Cryptography.Internal.dll
 /home/denny/Betacom Academy/betacom-academy/gestioneLogin/bin/Debug/net7.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
 /home/denny/Betacom Academy/betacom-academy/gestioneLogin/obj/Debug/net7.0/gestioneLogin.csproj.CopyComplete
+/home/denny/Betacom Academy/betacom-academy/gestioneLogin/bin/Debug/net7.0/ToolBoxLibrary.dll
+/home/denny/Betacom Academy/betacom-academy/gestioneLogin/bin/Debug/net7.0/ToolBoxLibrary.pdb

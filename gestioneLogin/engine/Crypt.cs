@@ -23,6 +23,8 @@ class Crypt{
                 )
             );
             EncSalt = Convert.ToBase64String(byteSalt);
+            System.Console.WriteLine(EncSalt);
+            Console.ReadKey();
         }
         catch (System.Exception)
         {
@@ -46,4 +48,5 @@ class Crypt{
 
         return newHash.SequenceEqual(hash);
     }
+
 }
