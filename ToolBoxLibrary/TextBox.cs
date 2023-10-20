@@ -17,6 +17,6 @@ public static class StringBox
             str == null
             ? ErrorManager.PrintException("la stringa in input è null", new ArgumentNullException(nameof(str)))
             : str == ""
-            ? ErrorManager.PrintException("la stringa in input è vuota", new ArgumentException(nameof(str)))
+            ? ErrorManager.PrintException("la stringa in input è vuota", new ArgumentException(nameof(str) + " can not be white"))
             : string.Concat(str[0].ToString().ToUpper(), str.AsSpan(1));
 }

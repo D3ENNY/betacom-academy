@@ -43,6 +43,16 @@
             "related": ".xml"
           }
         }
+      },
+      "ToolBoxLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/ToolBoxLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ToolBoxLibrary.dll": {}
+        }
       }
     }
   },
@@ -114,12 +124,18 @@
         "newtonsoft.json.nuspec",
         "packageIcon.png"
       ]
+    },
+    "ToolBoxLibrary/1.0.0": {
+      "type": "project",
+      "path": "../ToolBoxLibrary/ToolBoxLibrary.csproj",
+      "msbuildProject": "../ToolBoxLibrary/ToolBoxLibrary.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
       "Microsoft.AspNetCore.Cryptography.KeyDerivation >= 7.0.12",
-      "Newtonsoft.Json >= 13.0.3"
+      "Newtonsoft.Json >= 13.0.3",
+      "ToolBoxLibrary >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -146,7 +162,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/home/denny/Betacom Academy/betacom-academy/ToolBoxLibrary/ToolBoxLibrary.csproj": {
+              "projectPath": "/home/denny/Betacom Academy/betacom-academy/ToolBoxLibrary/ToolBoxLibrary.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

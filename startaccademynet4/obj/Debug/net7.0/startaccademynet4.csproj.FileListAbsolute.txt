@@ -51,3 +51,5 @@
 /home/denny/Betacom Academy/betacom-academy/startaccademynet4/obj/Debug/net7.0/startaccademynet4.pdb
 /home/denny/Betacom Academy/betacom-academy/startaccademynet4/obj/Debug/net7.0/startaccademynet4.genruntimeconfig.cache
 /home/denny/Betacom Academy/betacom-academy/startaccademynet4/obj/Debug/net7.0/ref/startaccademynet4.dll
+/home/denny/Betacom Academy/betacom-academy/startaccademynet4/bin/Debug/net7.0/ToolBoxLibrary.dll
+/home/denny/Betacom Academy/betacom-academy/startaccademynet4/bin/Debug/net7.0/ToolBoxLibrary.pdb

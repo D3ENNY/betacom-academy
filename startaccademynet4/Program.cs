@@ -354,6 +354,9 @@ internal class Program{
     // }
 
     private void test28(){
+        string? s = null;
         System.Console.WriteLine("string".Capitalize());
+        System.Console.WriteLine("".Capitalize());
+        System.Console.WriteLine(s.Capitalize());
     }
 }
