@@ -11,6 +11,9 @@ public class FileBox
     /// </summary>
     /// <typeparam name="T">Il tipo di oggetti da deserializzare.</typeparam>
     /// <param name="path">Il percorso del file XML da leggere.</param>
+    /// <exception cref="FileNotFoundException">path passato in input un path di un file non trovato</exception>
+    /// <exception cref="InvalidOperationException">si sono verificati errori duranti la serializzazione</exception>
+    /// <exception cref="Exception">si è verificato un errore generico</exception>
     /// <returns>
     /// Una lista di oggetti del tipo specificato deserializzati dal file XML. Se si verifica un errore durante la deserializzazione,
     /// verrà restituita una lista vuota.
@@ -48,9 +51,11 @@ public class FileBox
     /// </summary>
     /// <typeparam name="T">Il tipo di oggetti contenuti nella lista.</typeparam>
     /// <param name="list">La lista di oggetti da serializzare.</param>
+    /// <exception cref="IOException">si sono verificati errori di I/O</exception>
+    /// <exception cref="InvalidOperationException">si sono verificati errori duranti la serializzazione</exception>
+    /// <exception cref="Exception">si è verificato un errore generico</exception>
     /// <param name="path">Il percorso del file XML in cui scrivere i dati serializzati.</param>
     /// <return> Void </return>
-
     public void WriteXml<T>(List<T> list, string path) where T : List<T>
     {
         try
@@ -81,9 +86,11 @@ public class FileBox
     /// <typeparam name="T">Il tipo dell'elemento da serializzare e aggiungere.</typeparam>
     /// <param name="element">L'elemento da serializzare e aggiungere al documento XML.</param>
     /// <param name="path">Il percorso del documento XML esistente in cui aggiungere l'elemento.</param>
+    /// <exception cref="FileNotFoundException">tato passato in input un path di un file non trovato<</exception>
+    /// <exception cref="XmlException">si sono verificati errori durante il caricamento del documento XML</exception>
+    /// <exception cref="Exception">si è verificato un errore generico</exception>
     /// <return> Void </return>
-
-    public void AppendXml<T>(T element, string path)    
+    public void AppendToXml<T>(T element, string path)    
     {
         try{
             XDocument xmlDoc = XDocument.Load(path);
@@ -114,7 +121,7 @@ public class FileBox
             PrintException("Errore generico durante l'operazione di append XML.", ex);
         }
     }
-    
+
     /// <summary>
     /// Stampa un messaggio di errore e il messaggio dell'eccezione su Console.Error in rosso.
     /// </summary>
