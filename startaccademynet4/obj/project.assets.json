@@ -44,14 +44,13 @@
           }
         }
       },
-      "ToolBoxLibrary/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v7.0",
+      "NLogger/1.1.0": {
+        "type": "package",
         "compile": {
-          "bin/placeholder/ToolBoxLibrary.dll": {}
+          "lib/netcoreapp3.1/NLogger.dll": {}
         },
         "runtime": {
-          "bin/placeholder/ToolBoxLibrary.dll": {}
+          "lib/netcoreapp3.1/NLogger.dll": {}
         }
       }
     }
@@ -125,17 +124,24 @@
         "packageIcon.png"
       ]
     },
-    "ToolBoxLibrary/1.0.0": {
-      "type": "project",
-      "path": "../ToolBoxLibrary/ToolBoxLibrary.csproj",
-      "msbuildProject": "../ToolBoxLibrary/ToolBoxLibrary.csproj"
+    "NLogger/1.1.0": {
+      "sha512": "CxRJ6xLmzPbGG/ASGeGza4Oi/t9WrfK3UXSZnxSX3HVJrhfSoVGv5Xa6Fj3BkV0SSiaGMGl3IKryi5zxOAs/Fw==",
+      "type": "package",
+      "path": "nlogger/1.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netcoreapp3.1/NLogger.dll",
+        "nlogger.1.1.0.nupkg.sha512",
+        "nlogger.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
       "Microsoft.AspNetCore.Cryptography.KeyDerivation >= 7.0.12",
       "Newtonsoft.Json >= 13.0.3",
-      "ToolBoxLibrary >= 1.0.0"
+      "Nlogger >= 1.1.0"
     ]
   },
   "packageFolders": {
@@ -162,11 +168,7 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {
-            "/home/denny/Betacom Academy/betacom-academy/ToolBoxLibrary/ToolBoxLibrary.csproj": {
-              "projectPath": "/home/denny/Betacom Academy/betacom-academy/ToolBoxLibrary/ToolBoxLibrary.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
@@ -186,6 +188,10 @@
           "Newtonsoft.Json": {
             "target": "Package",
             "version": "[13.0.3, )"
+          },
+          "Nlogger": {
+            "target": "Package",
+            "version": "[1.1.0, )"
           }
         },
         "imports": [
