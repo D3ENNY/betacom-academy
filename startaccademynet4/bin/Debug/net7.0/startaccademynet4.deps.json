@@ -9,8 +9,8 @@
       "startaccademynet4/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Cryptography.KeyDerivation": "7.0.12",
+          "NLog": "5.2.5",
           "Newtonsoft.Json": "13.0.3",
-          "NLogger": "1.1.0",
           "ToolBoxLibrary": "1.0.0"
         },
         "runtime": {
@@ -44,11 +44,11 @@
           }
         }
       },
-      "NLogger/1.1.0": {
+      "NLog/5.2.5": {
         "runtime": {
-          "lib/netcoreapp3.1/NLogger.dll": {
-            "assemblyVersion": "1.1.0.0",
-            "fileVersion": "1.1.0.0"
+          "lib/netstandard2.0/NLog.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.2.5.2160"
           }
         }
       },
@@ -86,12 +86,12 @@
       "path": "newtonsoft.json/13.0.3",
       "hashPath": "newtonsoft.json.13.0.3.nupkg.sha512"
     },
-    "NLogger/1.1.0": {
+    "NLog/5.2.5": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-CxRJ6xLmzPbGG/ASGeGza4Oi/t9WrfK3UXSZnxSX3HVJrhfSoVGv5Xa6Fj3BkV0SSiaGMGl3IKryi5zxOAs/Fw==",
-      "path": "nlogger/1.1.0",
-      "hashPath": "nlogger.1.1.0.nupkg.sha512"
+      "sha512": "sha512-mMXtbAxfNzqkXcBjhJ3wN3rH7kwUZ0JL0GrUBI/lso7+tQ/HC4e5SnlmR3R5qQ9zWbqMbjxeH37rIf0yQGWTiA==",
+      "path": "nlog/5.2.5",
+      "hashPath": "nlog.5.2.5.nupkg.sha512"
     },
     "ToolBoxLibrary/1.0.0": {
       "type": "project",

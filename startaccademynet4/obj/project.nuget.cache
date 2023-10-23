@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "NIkVuLuyAwBZHo0dasOFe/K+HsPnHIcHv7uKyfseqMgCYHNMufFVhsdA4nSf/eb3V5SWyV/oAFHTpI/PnwtFNQ==",
+  "dgSpecHash": "r5phHMmHhMlKuhB7uB1jyRMF1wX7RQ7umOASiQxs1XF0mRlPMESchDz2fT7rNPw35KGXHjrfQtX9A3OyBgqyuQ==",
   "success": true,
   "projectFilePath": "/home/denny/Betacom Academy/betacom-academy/startaccademynet4/startaccademynet4.csproj",
   "expectedPackageFiles": [
     "/home/denny/.nuget/packages/microsoft.aspnetcore.cryptography.internal/7.0.12/microsoft.aspnetcore.cryptography.internal.7.0.12.nupkg.sha512",
     "/home/denny/.nuget/packages/microsoft.aspnetcore.cryptography.keyderivation/7.0.12/microsoft.aspnetcore.cryptography.keyderivation.7.0.12.nupkg.sha512",
     "/home/denny/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512",
-    "/home/denny/.nuget/packages/nlogger/1.1.0/nlogger.1.1.0.nupkg.sha512",
+    "/home/denny/.nuget/packages/nlog/5.2.5/nlog.5.2.5.nupkg.sha512",
     "/home/denny/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.12/microsoft.aspnetcore.app.ref.7.0.12.nupkg.sha512"
   ],
   "logs": []

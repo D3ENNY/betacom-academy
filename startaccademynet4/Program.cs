@@ -3,7 +3,7 @@ using static startaccademynet4.OOPTest;
 
 using ToolBoxLibrary.FileBox;
 using ToolBoxLibrary.TextBox;
-using NLogger;
+using NLog;
 
 namespace startaccademynet4;
 internal class Program{
@@ -364,7 +364,9 @@ internal class Program{
     // }
 
     private void test29(){
-        Logger logger = new();
-        logger.Info("test");
+
+        new NloggerSetUp();
+        Logger Logger = NLog.LogManager.GetCurrentClassLogger();
+        Logger.Info("hello world");
     }
 }
