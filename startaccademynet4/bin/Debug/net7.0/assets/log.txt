@@ -1,0 +1,6 @@
+2023-10-23 09:34:23.4654|INFO|startaccademynet4.Program|hello world
+2023-10-23 09:36:21.2676|INFO|startaccademynet4.Program|hello world
+2023-10-23 09:37:31.4453|INFO|startaccademynet4.Program|hello world
+2023-10-23 09:41:14.1101|INFO|startaccademynet4.Program|hello world
+2023-10-23 09:41:14.1835|ERROR|startaccademynet4.Program|error System.Exception: porco dio
+   at startaccademynet4.Program.test29() in /home/denny/Betacom Academy/betacom-academy/startaccademynet4/Program.cs:line 371

@@ -11,6 +11,7 @@
           "Microsoft.AspNetCore.Cryptography.KeyDerivation": "7.0.12",
           "NLog": "5.2.5",
           "Newtonsoft.Json": "13.0.3",
+          "NLog.Config": "4.7.15",
           "ToolBoxLibrary": "1.0.0"
         },
         "runtime": {
@@ -52,6 +53,13 @@
           }
         }
       },
+      "NLog.Config/4.7.15": {
+        "dependencies": {
+          "NLog": "5.2.5",
+          "NLog.Schema": "4.7.15"
+        }
+      },
+      "NLog.Schema/4.7.15": {},
       "ToolBoxLibrary/1.0.0": {
         "runtime": {
           "ToolBoxLibrary.dll": {}
@@ -92,6 +100,20 @@
       "sha512": "sha512-mMXtbAxfNzqkXcBjhJ3wN3rH7kwUZ0JL0GrUBI/lso7+tQ/HC4e5SnlmR3R5qQ9zWbqMbjxeH37rIf0yQGWTiA==",
       "path": "nlog/5.2.5",
       "hashPath": "nlog.5.2.5.nupkg.sha512"
+    },
+    "NLog.Config/4.7.15": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-njc2NvwgAzEuH609TGO4yqpokcxXFdypHwG3I8hyLYIE4pr+j4KJB4ZhsyODVwkP/n2F2V4uJ24VW4icNyJMcA==",
+      "path": "nlog.config/4.7.15",
+      "hashPath": "nlog.config.4.7.15.nupkg.sha512"
+    },
+    "NLog.Schema/4.7.15": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-cBzca2abS5Qz8e40vIPZNWBiDAQaRY7PKWffBbazMAzvxGBM6/ZWgaAEmqHUOluhV41cuyXnHOzo485JPLeChg==",
+      "path": "nlog.schema/4.7.15",
+      "hashPath": "nlog.schema.4.7.15.nupkg.sha512"
     },
     "ToolBoxLibrary/1.0.0": {
       "type": "project",

@@ -54,3 +54,4 @@
 /home/denny/Betacom Academy/betacom-academy/startaccademynet4/bin/Debug/net7.0/ToolBoxLibrary.dll
 /home/denny/Betacom Academy/betacom-academy/startaccademynet4/bin/Debug/net7.0/ToolBoxLibrary.pdb
 /home/denny/Betacom Academy/betacom-academy/startaccademynet4/bin/Debug/net7.0/NLog.dll
+/home/denny/Betacom Academy/betacom-academy/startaccademynet4/bin/Debug/net7.0/NLog.config

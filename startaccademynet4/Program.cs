@@ -363,10 +363,17 @@ internal class Program{
     //     System.Console.WriteLine(s.Capitalize());
     // }
 
+    private static readonly Logger logger = NLog.LogManager.GetCurrentClassLogger();
     private void test29(){
-
-        new NloggerSetUp();
-        Logger Logger = NLog.LogManager.GetCurrentClassLogger();
-        Logger.Info("hello world");
+        //new NloggerSetUp();
+        try{
+            logger.Info("hello world");
+            throw new Exception("porco dio");
+        }catch(Exception e)
+        {
+            logger.Error("error "+ e);
+        }finally{
+            NLog.LogManager.Shutdown();
+        }
     }
 }
