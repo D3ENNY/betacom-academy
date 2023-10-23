@@ -4,3 +4,12 @@
 2023-10-23 09:41:14.1101|INFO|startaccademynet4.Program|hello world
 2023-10-23 09:41:14.1835|ERROR|startaccademynet4.Program|error System.Exception: porco dio
    at startaccademynet4.Program.test29() in /home/denny/Betacom Academy/betacom-academy/startaccademynet4/Program.cs:line 371
+2023-10-23 09:52:38.5481|INFO|startaccademynet4.Program|hello world
+2023-10-23 09:52:38.6231|ERROR|startaccademynet4.Program|error System.Exception: porco dio
+   at startaccademynet4.Program.test29() in /home/denny/Betacom Academy/betacom-academy/startaccademynet4/Program.cs:line 371
+2023-10-23 09:53:57.5551|INFO|startaccademynet4.Program|hello world
+2023-10-23 09:53:57.6176|ERROR|startaccademynet4.Program|error Syste2023-10-23 09:53:57.6176|ERROR|startaccademynet4.Program|error System.Exception: porco dio
+   at startaccademynet4.Program.test29() in /home/denny/Betacom Academy/betacom-academy/startaccademynet4/Program.cs:line 371
+2023-10-23 09:55:22.8021|INFO|startaccademynet4.Program|hello world
+2023-10-23 09:55:22.8602|ERROR|startaccademynet4.Program|error Syste2023-10-23 09:55:22.8602|ERROR|startaccademynet4.Program|error System.Exception: porco dio
+   at startaccademynet4.Program.test29() in /home/denny/Betacom Academy/betacom-academy/startaccademynet4/Program.cs:line 371

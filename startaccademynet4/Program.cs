@@ -365,7 +365,7 @@ internal class Program{
 
     private static readonly Logger logger = NLog.LogManager.GetCurrentClassLogger();
     private void test29(){
-        //new NloggerSetUp();
+        new NloggerSetUp();
         try{
             logger.Info("hello world");
             throw new Exception("porco dio");

@@ -9,9 +9,9 @@ class LessonSix
             System.Console.WriteLine(valEnum);
     }
 
-    internal static void VisualizzaTipoOggetto<T>(T valOggetto){ 
-        System.Console.WriteLine($"tipo oggetto: {valOggetto.GetType()} - valore oggetto: {valOggetto}");
-    }
+    // internal static void VisualizzaTipoOggetto<T>(T valOggetto){ 
+    //     System.Console.WriteLine(value: $"tipo oggetto: {valOggetto.GetType()} - valore oggetto: {valOggetto}");
+    // }
 
     //non si può fare
     // internal static void VisualizzaEnum(Enum e){

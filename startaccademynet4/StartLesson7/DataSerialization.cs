@@ -25,7 +25,7 @@ class DataSerialization{
                 fJson = sr.ReadToEnd();
             }
 
-            flys = JsonConvert.DeserializeObject<List<Fly>>(fJson);
+            flys = JsonConvert.DeserializeObject<List<Fly>>(fJson) ?? new();
         }
 
         internal void  SaveJson()
