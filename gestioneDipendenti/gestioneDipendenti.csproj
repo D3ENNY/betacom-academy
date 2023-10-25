@@ -7,4 +7,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Nlog" Version="5.2.5" />
+    <PackageReference Include="Nlog.config" Version="4.7.15" />
+  </ItemGroup>
+
 </Project>

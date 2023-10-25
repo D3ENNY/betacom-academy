@@ -1,0 +1,5 @@
+2023-10-25 10:39:02.5493|INFO|gestioneDipendenti.Program|Hello world
+2023-10-25 10:39:23.7915|INFO|gestioneDipendenti.Program|Hello world
+2023-10-25 10:39:38.0236|INFO|gestioneDipendenti.Program|Hello world
+2023-10-25 10:40:42.7180|INFO|gestioneDipendenti.Program|Hello world
+2023-10-25 10:44:33.8714|INFO|gestioneDipendenti.Program|Hello world
