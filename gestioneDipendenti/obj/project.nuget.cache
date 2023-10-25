@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "hTkQ+dgcz1xr795S4ekyfXfUR+qrO5w7Eq9rid0B9qY+f84kvCbRwSaM7N+idqmn0W2wGR1zAN4ejiGwP9X/JA==",
+  "success": true,
+  "projectFilePath": "/home/denny/Betacom Academy/betacom-academy/gestioneDipendenti/gestioneDipendenti.csproj",
+  "expectedPackageFiles": [
+    "/home/denny/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.12/microsoft.aspnetcore.app.ref.7.0.12.nupkg.sha512"
+  ],
+  "logs": []
+}
