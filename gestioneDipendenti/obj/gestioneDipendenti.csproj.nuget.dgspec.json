@@ -10,11 +10,11 @@
         "projectUniqueName": "/home/denny/Betacom Academy/betacom-academy/gestioneDipendenti/gestioneDipendenti.csproj",
         "projectName": "gestioneDipendenti",
         "projectPath": "/home/denny/Betacom Academy/betacom-academy/gestioneDipendenti/gestioneDipendenti.csproj",
-        "packagesPath": "/home/denny/.nuget/packages/",
+        "packagesPath": "/root/.nuget/packages/",
         "outputPath": "/home/denny/Betacom Academy/betacom-academy/gestioneDipendenti/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/denny/.nuget/NuGet/NuGet.Config"
+          "/root/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
