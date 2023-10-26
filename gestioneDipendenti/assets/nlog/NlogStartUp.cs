@@ -4,35 +4,17 @@ namespace gestioneDipendenti.nlog;
 
 class NlogStartUp
 {
-    public static void Test1()
-    {
-        var config = new NLog.Config.LoggingConfiguration();
 
-        // Targets where to log to: File and Console
-        var logfile = new NLog.Targets.FileTarget("logfile") { FileName = "assets/log.txt" };
-        var logconsole = new NLog.Targets.ConsoleTarget("logconsole");
-                    
-        // Rules for mapping loggers to targets            
-        config.AddRule(LogLevel.Info, LogLevel.Fatal, logfile);
-        config.AddRule(LogLevel.Debug, LogLevel.Fatal, logfile);
-                    
-        // Apply config           
-        NLog.LogManager.Configuration = config;
+    private static NlogStartUp? _Instance;
+
+    private NlogStartUp()
+    {
+        LogManager.Setup().LoadConfiguration(builder => {
+            builder.ForLogger("infoLogger").FilterMinLevel(LogLevel.Info).WriteToFile(fileName: "../../../assets/log/info.txt");
+            builder.ForLogger("errorLogger").FilterMinLevel(LogLevel.Error).WriteToFile(fileName: "../../../assets/log/log.txt");
+        });
     }
 
-    public static void Test2()
-    {
-        var config = new NLog.Config.LoggingConfiguration();
-
-        // Targets where to log to: File and Console
-        var logfile = new NLog.Targets.FileTarget("logfile") { FileName = "assets/log.txt" };
-        var logconsole = new NLog.Targets.ConsoleTarget("logconsole");
-                    
-        // Rules for mapping loggers to targets            
-        config.AddRule(LogLevel.Info, LogLevel.Fatal, logconsole);
-        config.AddRule(LogLevel.Debug, LogLevel.Fatal, logconsole);
-                    
-        // Apply config           
-        NLog.LogManager.Configuration = config;
-    }
+    internal static NlogStartUp Instance() => _Instance ??= new();
+    
 }

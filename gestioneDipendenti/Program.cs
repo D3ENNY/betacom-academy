@@ -1,26 +1,24 @@
 ﻿using gestioneDipendenti.nlog;
 using NLog;
-using NLog.Fluent;
-
+ 
+namespace gestioneDipendenti;
 class Program
 {
-    public static void Main(string[]args)
+    private static readonly Logger infoLogger = LogManager.GetLogger("infoLogger");
+    private static readonly Logger errorLogger = LogManager.GetLogger("errorLogger");   
+    static void Main(string[] args)
     {
-        var logger = LogManager.GetCurrentClassLogger();
-         
-        NlogStartUp.Test2();
-        LogEventBuilder infoEvent = logger.ForInfoEvent();
-        LogEventBuilder errorEvent = logger.ForErrorEvent();
+        NlogStartUp.Instance(); 
         try
         {
-            //ex 1
-            infoEvent.Property("id", 123).Property("category", "test");
+           infoLogger.Info("Hello world final test");
+           throw new Exception("hehehe");
         }
         catch (Exception ex)
         {
-            //ex 2(
-            errorEvent.Exception(ex).Message("log a message with {0} parameter", 1);
-            throw;
-        }
+           errorLogger.Error(ex, "Goodbye cruel world");
+        }   
     }
 }
+ 
+ 

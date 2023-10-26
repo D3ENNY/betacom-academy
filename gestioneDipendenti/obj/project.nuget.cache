@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "z8bLl3kSdzsBSu8WuSVqoVfjJ4WOS4jb8yS8iAzqwUxf7u8hziaUzcuhM5C/P9VF9euOtkOSvUtsQApv91JpyA==",
+  "dgSpecHash": "NZAd//vUiIcihDix2EdXLRiCVXlstxsBBHljM4i8Uk6xJFL0EKxkLPvUuvBEGqB5GhO+qSK6WRIzBMb7XaqmuQ==",
   "success": true,
   "projectFilePath": "/home/denny/Betacom Academy/betacom-academy/gestioneDipendenti/gestioneDipendenti.csproj",
   "expectedPackageFiles": [
-    "/root/.nuget/packages/nlog/5.2.5/nlog.5.2.5.nupkg.sha512",
-    "/root/.nuget/packages/nlog.config/4.7.15/nlog.config.4.7.15.nupkg.sha512",
-    "/root/.nuget/packages/nlog.schema/4.7.15/nlog.schema.4.7.15.nupkg.sha512",
-    "/root/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.12/microsoft.aspnetcore.app.ref.7.0.12.nupkg.sha512"
+    "/home/denny/.nuget/packages/nlog/5.2.5/nlog.5.2.5.nupkg.sha512",
+    "/home/denny/.nuget/packages/nlog.config/4.7.15/nlog.config.4.7.15.nupkg.sha512",
+    "/home/denny/.nuget/packages/nlog.schema/4.7.15/nlog.schema.4.7.15.nupkg.sha512",
+    "/home/denny/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.12/microsoft.aspnetcore.app.ref.7.0.12.nupkg.sha512"
   ],
   "logs": []
 }
