@@ -1,4 +1,6 @@
-﻿using gestioneDipendenti.nlog;
+﻿using System.ComponentModel.Design;
+using gestioneDipendenti.engine;
+using gestioneDipendenti.nlog;
 using NLog;
  
 namespace gestioneDipendenti;
@@ -11,14 +13,22 @@ class Program
         NlogStartUp.Instance(); 
         try
         {
-           infoLogger.Info("Hello world final test");
-           throw new Exception("hehehe");
+            infoLogger.Info("application started");
+
+            int choise = 0;
+            do
+            {
+                MenuManager.Show();
+                if(int.TryParse(Console.ReadLine(), out choise))
+                    MenuManager.HandleChoise(choise);
+            }while(choise != 5);
         }
         catch (Exception ex)
         {
-           errorLogger.Error(ex, "Goodbye cruel world");
-        }   
+           errorLogger.Error(ex, "generic error was occured");
+        }finally
+        {
+            infoLogger.Info("application closed");
+        }
     }
 }
- 
- 

@@ -41,10 +41,6 @@
             "Nlog": {
               "target": "Package",
               "version": "[5.2.5, )"
-            },
-            "Nlog.config": {
-              "target": "Package",
-              "version": "[4.7.15, )"
             }
           },
           "imports": [

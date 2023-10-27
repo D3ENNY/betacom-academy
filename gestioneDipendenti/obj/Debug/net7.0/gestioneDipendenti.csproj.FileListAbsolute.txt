@@ -1,4 +1,3 @@
-/home/denny/Betacom Academy/betacom-academy/gestioneDipendenti/bin/Debug/net7.0/NLog.config
 /home/denny/Betacom Academy/betacom-academy/gestioneDipendenti/bin/Debug/net7.0/gestioneDipendenti
 /home/denny/Betacom Academy/betacom-academy/gestioneDipendenti/bin/Debug/net7.0/gestioneDipendenti.deps.json
 /home/denny/Betacom Academy/betacom-academy/gestioneDipendenti/bin/Debug/net7.0/gestioneDipendenti.runtimeconfig.json

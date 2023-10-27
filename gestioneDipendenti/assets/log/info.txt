@@ -1,2 +1,9 @@
-
-2023-10-26 10:37:36.7515|INFO|infoLogger|Hello world final test
+2023-10-27 10:31:38.6099|INFO|infoLogger|application started
+2023-10-27 10:31:42.9414|INFO|infoLogger|l'utente ha inserito il numero: 7
+2023-10-27 10:31:42.9414|WARN|infoLogger|l'input 7 non è gestito
+2023-10-27 10:32:57.8486|INFO|infoLogger|l'utente ha inserito il numero: 1
+2023-10-27 10:33:11.2080|INFO|infoLogger|l'utente ha inserito il numero: 0
+2023-10-27 10:33:11.2080|WARN|infoLogger|l'input 0 non è gestito
+2023-10-27 10:36:05.3770|INFO|infoLogger|application started
+2023-10-27 10:36:09.1438|INFO|infoLogger|l'utente ha inserito il numero: 5
+2023-10-27 10:36:11.1697|INFO|infoLogger|application closed
