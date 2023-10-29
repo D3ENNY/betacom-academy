@@ -1,0 +1,4 @@
+2023-10-29 20:03:04.4035|ERROR|errorLogger|generic error was occured|System.InvalidOperationException: Cannot read keys when either application does not have a console or when console input has been redirected. Try Console.Read.
+   at System.ConsolePal.ReadKey(Boolean intercept)
+   at gestioneDipendenti.engine.MenuManager.HandleChoise(Int32 n) in /home/denny/Betacom Academy/betacom-academy/gestioneDipendenti/engine/manager/MenuManager.cs:line 54
+   at gestioneDipendenti.Program.Main(String[] args) in /home/denny/Betacom Academy/betacom-academy/gestioneDipendenti/Program.cs:line 24

@@ -6,6 +6,7 @@ class MenuManager
 {
     private static readonly Logger infoLogger = LogManager.GetLogger("infoLogger");
     private static readonly Logger errorLogger = LogManager.GetLogger("errorLogger"); 
+    private static readonly DataManager data = new();
     internal static void Show()
     {
         Console.Clear();
@@ -29,6 +30,7 @@ class MenuManager
         {
             case 1:
                 // carica da file
+                data.LoadFromFile();
                 break;
             case 2:
                 // visualizza dati

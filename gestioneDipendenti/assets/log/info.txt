@@ -7,3 +7,43 @@
 2023-10-27 10:36:05.3770|INFO|infoLogger|application started
 2023-10-27 10:36:09.1438|INFO|infoLogger|l'utente ha inserito il numero: 5
 2023-10-27 10:36:11.1697|INFO|infoLogger|application closed
+2023-10-27 15:51:34.2817|INFO|infoLogger|application started
+2023-10-27 15:53:06.2775|INFO|infoLogger|application started
+2023-10-27 15:54:01.7958|INFO|infoLogger|application started
+2023-10-27 15:54:22.5925|INFO|infoLogger|application started
+2023-10-27 17:22:01.1063|INFO|infoLogger|application started
+2023-10-27 17:22:31.2404|INFO|infoLogger|application started
+2023-10-27 17:22:32.7911|INFO|infoLogger|l'utente ha inserito il numero: 1
+2023-10-27 17:23:09.8134|INFO|infoLogger|application started
+2023-10-27 17:23:11.4773|INFO|infoLogger|l'utente ha inserito il numero: 1
+2023-10-27 17:23:47.7500|INFO|infoLogger|application started
+2023-10-27 17:23:51.9174|INFO|infoLogger|l'utente ha inserito il numero: 1
+2023-10-27 17:25:34.8436|INFO|infoLogger|application started
+2023-10-27 17:25:39.4254|INFO|infoLogger|l'utente ha inserito il numero: 1
+2023-10-27 17:27:54.3116|INFO|infoLogger|application started
+2023-10-27 17:27:57.3178|INFO|infoLogger|l'utente ha inserito il numero: 1
+2023-10-27 17:28:36.5718|INFO|infoLogger|application started
+2023-10-27 17:28:37.4767|INFO|infoLogger|l'utente ha inserito il numero: 1
+2023-10-27 17:30:27.9751|INFO|infoLogger|application started
+2023-10-27 17:30:29.3321|INFO|infoLogger|l'utente ha inserito il numero: 1
+2023-10-27 17:32:13.6146|INFO|infoLogger|application started
+2023-10-27 17:32:16.3065|INFO|infoLogger|l'utente ha inserito il numero: 1
+2023-10-29 19:55:34.4634|INFO|infoLogger|application started
+2023-10-29 19:56:34.5853|INFO|infoLogger|application started
+2023-10-29 19:57:53.7218|INFO|infoLogger|application started
+2023-10-29 19:58:29.0393|INFO|infoLogger|application started
+2023-10-29 20:02:34.9997|INFO|infoLogger|application started
+2023-10-29 20:03:02.1529|INFO|infoLogger|application started
+2023-10-29 20:03:04.3806|INFO|infoLogger|l'utente ha inserito il numero: 0
+2023-10-29 20:03:04.3806|WARN|infoLogger|l'input 0 non è gestito
+2023-10-29 20:03:04.4394|INFO|infoLogger|application closed
+2023-10-29 20:03:25.2373|INFO|infoLogger|application started
+2023-10-29 20:03:56.0011|INFO|infoLogger|application started
+2023-10-29 20:05:28.5923|INFO|infoLogger|application started
+2023-10-29 20:05:30.2154|INFO|infoLogger|l'utente ha inserito il numero: 1
+2023-10-29 20:07:40.6112|INFO|infoLogger|application started
+2023-10-29 20:07:41.6821|INFO|infoLogger|l'utente ha inserito il numero: 1
+2023-10-29 20:08:32.7959|INFO|infoLogger|application started
+2023-10-29 20:08:33.7434|INFO|infoLogger|l'utente ha inserito il numero: 1
+2023-10-29 20:37:58.4034|INFO|infoLogger|application started
+2023-10-29 20:37:59.2198|INFO|infoLogger|l'utente ha inserito il numero: 1

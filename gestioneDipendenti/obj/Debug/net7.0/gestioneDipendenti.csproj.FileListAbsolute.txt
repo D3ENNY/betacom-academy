@@ -15,3 +15,5 @@
 /home/denny/Betacom Academy/betacom-academy/gestioneDipendenti/obj/Debug/net7.0/gestioneDipendenti.pdb
 /home/denny/Betacom Academy/betacom-academy/gestioneDipendenti/obj/Debug/net7.0/gestioneDipendenti.genruntimeconfig.cache
 /home/denny/Betacom Academy/betacom-academy/gestioneDipendenti/obj/Debug/net7.0/ref/gestioneDipendenti.dll
+/home/denny/Betacom Academy/betacom-academy/gestioneDipendenti/bin/Debug/net7.0/ToolBoxLibrary.dll
+/home/denny/Betacom Academy/betacom-academy/gestioneDipendenti/bin/Debug/net7.0/ToolBoxLibrary.pdb

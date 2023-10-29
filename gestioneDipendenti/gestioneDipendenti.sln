@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gestioneDipendenti", "gestioneDipendenti.csproj", "{95ED3C05-248D-4C94-BF42-FFCC16D33454}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToolBoxLibrary", "..\ToolBoxLibrary\ToolBoxLibrary.csproj", "{571CA7AE-8D22-45F4-B184-804AA3601F54}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{95ED3C05-248D-4C94-BF42-FFCC16D33454}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{95ED3C05-248D-4C94-BF42-FFCC16D33454}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{95ED3C05-248D-4C94-BF42-FFCC16D33454}.Release|Any CPU.Build.0 = Release|Any CPU
+		{571CA7AE-8D22-45F4-B184-804AA3601F54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{571CA7AE-8D22-45F4-B184-804AA3601F54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{571CA7AE-8D22-45F4-B184-804AA3601F54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{571CA7AE-8D22-45F4-B184-804AA3601F54}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
