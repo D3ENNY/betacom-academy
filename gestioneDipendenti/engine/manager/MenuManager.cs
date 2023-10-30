@@ -43,6 +43,9 @@ class MenuManager
                                                 $"Telefono{new string(' ', 10-"Telefono".ToString().Length)}\n" + 
                                                 new string('=', 217));
 
+    // private static void EmployeesDataMenu(){
+
+    // }
     internal static void HandleChoise(int n)
     {
         infoLogger.Info($"l'utente ha inserito il numero: {n}");
@@ -58,6 +61,7 @@ class MenuManager
                 break;
             case 3:
                 //estrazione dati
+
                 break;
             case 4: 
                 //serializzazione in JSON

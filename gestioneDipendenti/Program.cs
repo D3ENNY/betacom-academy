@@ -26,6 +26,7 @@ class Program
         catch (Exception ex)
         {
            errorLogger.Error(ex, "generic error was occured");
+           Console.Error.WriteLine(ex.StackTrace);
         }finally
         {
             infoLogger.Info("application closed");
