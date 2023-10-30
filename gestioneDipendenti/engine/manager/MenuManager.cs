@@ -43,11 +43,14 @@ class MenuManager
                                                 new string('=', 218));
 
     internal static void HeaderViewEmployerActivityData() => Console.WriteLine($"|ID{new string(' ', 5-"ID".Length)} | " + 
-                                                                $"Matricola{new string(' ', 9-"matricola".Length)} | " +
-                                                                $"Data{new string(' ', 10-"Data".Length)} | " +
-                                                                $"Attività{new string(' ', 15-"Attività".Length)} | " +
-                                                                $"Ore{new string(' ', 3-"Ore".Length)} |\n" + 
-                                                                new string('=', 57));
+                                                        $"Matricola{new string(' ', 9-"matricola".Length)} | " +
+                                                        $"Data{new string(' ', 10-"Data".Length)} | " +
+                                                        $"Attività{new string(' ', 15-"Attività".Length)} | " +
+                                                        $"Ore{new string(' ', 3-"Ore".Length)} |\n" + 
+                                                        new string('=', 57));
+    internal static void HeaderAvgDepartment() => Console.WriteLine($"| Reparto{new string(' ', 35-"Reparto".Length)} | " +
+                                             $"Età media{new string(' ', 10-"Età media".Length)} |\n" +
+                                             new string('=', 51));                      
     private static void EmployeesDataMenu(){
         Console.Clear();
         Console.WriteLine(@"
@@ -126,7 +129,7 @@ class MenuManager
             case 2:
                 //età media per reparto
                 infoLogger.Info("calcolo età media per reparto");
-                DataManager.avgAgeDepartment();
+                DataManager.AvgAgeDepartment();
                 break;
             case 3:
                 //totale ore lavoro per reparto
