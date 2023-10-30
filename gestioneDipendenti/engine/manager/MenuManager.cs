@@ -31,7 +31,7 @@ class MenuManager
         ======================================
         ");
     }
-    internal static void HeaderViewData() =>  Console.WriteLine($"ID{new string(' ', 5-"ID".Length)} | " + 
+    internal static void HeaderViewEmployerData() => Console.WriteLine($"|ID{new string(' ', 5-"ID".Length)} | " + 
                                                 $"Nominativo{new string(' ', 35-"Nominativo".Length)} | " +
                                                 $"Ruolo{new string(' ', 20-"Ruolo".Length)} | " +
                                                 $"Dipartimento{new string(' ', 35-"Dipartimento".Length)} | " +
@@ -40,9 +40,15 @@ class MenuManager
                                                 $"Città{new string(' ',20-"Città".Length)} | " + 
                                                 $"Provincia{new string(' ',10-"Provincia".Length)} | " + 
                                                 $"Cap{new string(' ',5-"Cap".Length)} | " + 
-                                                $"Telefono{new string(' ', 10-"Telefono".ToString().Length)}\n" + 
-                                                new string('=', 217));
+                                                $"Telefono{new string(' ', 10-"Telefono".ToString().Length)} |\n" + 
+                                                new string('=', 218));
 
+    internal static void HeaderViewEmployerActivityData() => Console.WriteLine($"|ID{new string(' ', 5-"ID".Length)} | " + 
+                                                                $"Matricola{new string(' ', 9-"matricola".Length)} | " +
+                                                                $"Data{new string(' ', 10-"Data".Length)} | " +
+                                                                $"Attività{new string(' ', 15-"Attività".Length)} | " +
+                                                                $"Ore{new string(' ', 3-"Ore".Length)} |\n" + 
+                                                                new string('=', 57));
     // private static void EmployeesDataMenu(){
 
     // }

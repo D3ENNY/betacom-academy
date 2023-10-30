@@ -14,8 +14,9 @@ class Employers : PersonData
     public override string Province { get; set; } = "";
     public override string Cap { get; set; } = "";
     public override int PhoneNumber { get; set; }
+    internal static List<EmployersActivity> EmployersActivitiesList{get; private set;} = new();
 
-    internal string GetDataObj() => $"{RegisterId}{new string(' ', 5-RegisterId.Length)} | " + 
+    internal string GetDataObj() => $"|{RegisterId}{new string(' ', 5-RegisterId.Length)} | " + 
                                     $"{Nominative}{new string(' ', 35-Nominative.Length)} | " +
                                     $"{Role}{new string(' ', 20-Role.Length)} | " +
                                     $"{Department}{new string(' ', 35-Department.Length)} | " +
@@ -27,14 +28,14 @@ class Employers : PersonData
                                     $"{PhoneNumber}{new string(' ', 10-PhoneNumber.ToString().Length)} |";
 
     public override string ToString() => $@"matricola: {RegisterId}
-                                            nominativo: {Nominative}
-                                            ruolo: {Role}
-                                            reparto: {Department}
-                                            età: {Age}
-                                            indirizzo: {Address}
-                                            city: {City}
-                                            province: {Province}
-                                            cap: {Cap}
-                                            numero di telefono: {PhoneNumber}";
+    nominativo: {Nominative}
+    ruolo: {Role}
+    reparto: {Department}
+    età: {Age}
+    indirizzo: {Address}
+    city: {City}
+    province: {Province}
+    cap: {Cap}
+    numero di telefono: {PhoneNumber}";
 
 }

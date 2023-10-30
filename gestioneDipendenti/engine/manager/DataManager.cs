@@ -9,13 +9,18 @@ class DataManager
     {
         FileBox fb = new();
         employersList.AddRange(fb.ReadTxt<Employers>(Constant.sepFile.ToString(), Constant.employerPath));
+        Employers.EmployersActivitiesList.AddRange(fb.ReadTxt<EmployersActivity>(Constant.sepFile.ToString(), Constant.employerActivityPath));
     }
 
     internal void ViewData()
     {
         MenuManager.viewDataMenu();
-        MenuManager.HeaderViewData();
+        MenuManager.HeaderViewEmployerData();
         employersList.ForEach(x => Console.WriteLine(x.GetDataObj()));
         Console.WriteLine(new string('=', 217));
+        Console.WriteLine('\n');
+        MenuManager.HeaderViewEmployerActivityData();
+        Employers.EmployersActivitiesList.ForEach(x => Console.WriteLine(x.GetDataObj()));
+        Console.WriteLine(new string('=', 57));
     }
 }
