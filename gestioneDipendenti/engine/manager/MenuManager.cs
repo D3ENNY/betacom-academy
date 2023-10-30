@@ -34,6 +34,7 @@ class MenuManager
                 break;
             case 2:
                 // visualizza dati
+                data.ViewData();
                 break;
             case 3:
                 //estrazione dati

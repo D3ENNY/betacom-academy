@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "sU7urki4HaPeAUOsxMR+YcV3r3riRKs6+a6oDtR//gHJ2iUXY8R69JVGDAec7hwI/NCtOyMZ5BVsyFnVDagPfA==",
+  "dgSpecHash": "d7stekhYrxUiTBBJ0G8ExrE3vGdbdeG1OUAXXVOsS/i1mvXluDNA7P/cgUCKRX0OnvHaQ8YgjxNyT34CFJfUcg==",
   "success": true,
   "projectFilePath": "/home/denny/Betacom Academy/betacom-academy/gestioneDipendenti/gestioneDipendenti.csproj",
   "expectedPackageFiles": [
     "/home/denny/.nuget/packages/nlog/5.2.5/nlog.5.2.5.nupkg.sha512",
-    "/home/denny/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.12/microsoft.aspnetcore.app.ref.7.0.12.nupkg.sha512"
+    "/home/denny/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.13/microsoft.aspnetcore.app.ref.7.0.13.nupkg.sha512"
   ],
   "logs": []
 }

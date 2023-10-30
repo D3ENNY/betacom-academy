@@ -47,3 +47,164 @@
 2023-10-29 20:08:33.7434|INFO|infoLogger|l'utente ha inserito il numero: 1
 2023-10-29 20:37:58.4034|INFO|infoLogger|application started
 2023-10-29 20:37:59.2198|INFO|infoLogger|l'utente ha inserito il numero: 1
+2023-10-29 21:37:30.1096|INFO|infoLogger|application started
+2023-10-29 21:37:31.6525|INFO|infoLogger|l'utente ha inserito il numero: 1
+2023-10-29 21:37:43.6123|INFO|infoLogger|l'utente ha inserito il numero: 1
+2023-10-29 21:38:54.8144|INFO|infoLogger|application started
+2023-10-29 21:38:55.8817|INFO|infoLogger|l'utente ha inserito il numero: 1
+2023-10-29 21:43:39.3860|INFO|infoLogger|application started
+2023-10-29 21:43:40.5541|INFO|infoLogger|l'utente ha inserito il numero: 1
+2023-10-30 09:18:21.9769|INFO|infoLogger|application started
+2023-10-30 09:18:23.1678|INFO|infoLogger|l'utente ha inserito il numero: 1
+2023-10-30 09:18:29.1747|INFO|infoLogger|l'utente ha inserito il numero: 2
+2023-10-30 09:18:33.6529|INFO|infoLogger|l'utente ha inserito il numero: 1
+2023-10-30 09:18:35.2596|INFO|infoLogger|l'utente ha inserito il numero: 2
+2023-10-30 09:19:09.3898|INFO|infoLogger|application started
+2023-10-30 09:19:10.2661|INFO|infoLogger|l'utente ha inserito il numero: 1
+2023-10-30 09:19:11.8315|INFO|infoLogger|l'utente ha inserito il numero: 1
+2023-10-30 09:20:12.2363|INFO|infoLogger|application started
+2023-10-30 09:20:14.0443|INFO|infoLogger|l'utente ha inserito il numero: 1
+2023-10-30 09:20:46.9678|INFO|infoLogger|l'utente ha inserito il numero: 1
+2023-10-30 09:20:54.0878|INFO|infoLogger|application started
+2023-10-30 09:20:55.5870|INFO|infoLogger|l'utente ha inserito il numero: 1
+2023-10-30 09:21:24.6594|INFO|infoLogger|application started
+2023-10-30 09:21:28.8344|INFO|infoLogger|l'utente ha inserito il numero: 1
+2023-10-30 09:22:56.9098|INFO|infoLogger|application started
+2023-10-30 09:22:57.8652|INFO|infoLogger|l'utente ha inserito il numero: 1
+2023-10-30 09:23:41.2991|INFO|infoLogger|application started
+2023-10-30 09:23:43.3048|INFO|infoLogger|l'utente ha inserito il numero: 1
+2023-10-30 09:24:29.9421|INFO|infoLogger|application started
+2023-10-30 09:24:30.7563|INFO|infoLogger|l'utente ha inserito il numero: 1
+2023-10-30 09:28:45.0112|INFO|infoLogger|application started
+2023-10-30 09:28:46.7462|INFO|infoLogger|l'utente ha inserito il numero: 1
+2023-10-30 09:28:48.3943|INFO|infoLogger|l'utente ha inserito il numero: 2
+2023-10-30 09:29:20.0870|INFO|infoLogger|application started
+2023-10-30 09:29:21.2875|INFO|infoLogger|l'utente ha inserito il numero: 1
+2023-10-30 09:29:22.4570|INFO|infoLogger|l'utente ha inserito il numero: 2
+2023-10-30 09:30:20.3106|INFO|infoLogger|application started
+2023-10-30 09:30:22.1791|INFO|infoLogger|l'utente ha inserito il numero: 1
+2023-10-30 09:30:23.2218|INFO|infoLogger|l'utente ha inserito il numero: 2
+2023-10-30 09:30:23.2439|INFO|infoLogger|application closed
+2023-10-30 09:30:34.9491|INFO|infoLogger|application started
+2023-10-30 09:30:36.7287|INFO|infoLogger|l'utente ha inserito il numero: 1
+2023-10-30 09:30:39.8638|INFO|infoLogger|l'utente ha inserito il numero: 2
+2023-10-30 09:30:39.8860|INFO|infoLogger|application closed
+2023-10-30 09:30:56.4571|INFO|infoLogger|application started
+2023-10-30 09:30:57.2801|INFO|infoLogger|l'utente ha inserito il numero: 1
+2023-10-30 09:30:59.0404|INFO|infoLogger|l'utente ha inserito il numero: 2
+2023-10-30 09:31:33.2895|INFO|infoLogger|application started
+2023-10-30 09:31:34.0409|INFO|infoLogger|l'utente ha inserito il numero: 1
+2023-10-30 09:31:36.6267|INFO|infoLogger|l'utente ha inserito il numero: 2
+2023-10-30 09:31:36.6523|INFO|infoLogger|application closed
+2023-10-30 09:31:58.5340|INFO|infoLogger|application started
+2023-10-30 09:31:59.9071|INFO|infoLogger|l'utente ha inserito il numero: 1
+2023-10-30 09:32:01.7750|INFO|infoLogger|l'utente ha inserito il numero: 2
+2023-10-30 09:32:24.8619|INFO|infoLogger|application started
+2023-10-30 09:32:25.5248|INFO|infoLogger|l'utente ha inserito il numero: 1
+2023-10-30 09:32:26.7729|INFO|infoLogger|l'utente ha inserito il numero: 2
+2023-10-30 09:32:52.4723|INFO|infoLogger|application started
+2023-10-30 09:32:53.6772|INFO|infoLogger|l'utente ha inserito il numero: 1
+2023-10-30 09:32:55.2061|INFO|infoLogger|l'utente ha inserito il numero: 2
+2023-10-30 09:33:15.3986|INFO|infoLogger|application started
+2023-10-30 09:33:16.2303|INFO|infoLogger|l'utente ha inserito il numero: 1
+2023-10-30 09:33:17.5832|INFO|infoLogger|l'utente ha inserito il numero: 2
+2023-10-30 09:33:54.6533|INFO|infoLogger|application started
+2023-10-30 09:33:55.8235|INFO|infoLogger|l'utente ha inserito il numero: 1
+2023-10-30 09:33:56.6181|INFO|infoLogger|l'utente ha inserito il numero: 2
+2023-10-30 09:34:44.4258|INFO|infoLogger|application started
+2023-10-30 09:34:46.6527|INFO|infoLogger|l'utente ha inserito il numero: 1
+2023-10-30 09:34:48.6095|INFO|infoLogger|l'utente ha inserito il numero: 2
+2023-10-30 09:38:03.4427|INFO|infoLogger|application started
+2023-10-30 09:38:04.2126|INFO|infoLogger|l'utente ha inserito il numero: 1
+2023-10-30 09:38:05.8703|INFO|infoLogger|l'utente ha inserito il numero: 2
+2023-10-30 09:38:26.9291|INFO|infoLogger|application started
+2023-10-30 09:38:28.4114|INFO|infoLogger|l'utente ha inserito il numero: 1
+2023-10-30 09:38:29.6358|INFO|infoLogger|l'utente ha inserito il numero: 2
+2023-10-30 09:43:06.4178|INFO|infoLogger|application started
+2023-10-30 09:43:07.4917|INFO|infoLogger|l'utente ha inserito il numero: 1
+2023-10-30 09:43:08.4643|INFO|infoLogger|l'utente ha inserito il numero: 2
+2023-10-30 09:43:08.5003|INFO|infoLogger|application closed
+2023-10-30 09:43:45.1521|INFO|infoLogger|application started
+2023-10-30 09:43:46.2148|INFO|infoLogger|l'utente ha inserito il numero: 1
+2023-10-30 09:43:47.7648|INFO|infoLogger|l'utente ha inserito il numero: 2
+2023-10-30 09:43:47.7850|INFO|infoLogger|application closed
+2023-10-30 09:44:10.5423|INFO|infoLogger|application started
+2023-10-30 09:44:11.1474|INFO|infoLogger|l'utente ha inserito il numero: 1
+2023-10-30 09:44:18.3802|INFO|infoLogger|l'utente ha inserito il numero: 2
+2023-10-30 09:44:18.4153|INFO|infoLogger|application closed
+2023-10-30 09:44:49.5978|INFO|infoLogger|application started
+2023-10-30 09:44:50.1531|INFO|infoLogger|l'utente ha inserito il numero: 1
+2023-10-30 09:45:26.9830|INFO|infoLogger|application started
+2023-10-30 09:45:27.6226|INFO|infoLogger|l'utente ha inserito il numero: 1
+2023-10-30 09:45:39.7828|INFO|infoLogger|l'utente ha inserito il numero: 1
+2023-10-30 09:46:03.8870|INFO|infoLogger|application started
+2023-10-30 09:46:04.7858|INFO|infoLogger|l'utente ha inserito il numero: 1
+2023-10-30 09:46:23.9295|INFO|infoLogger|application started
+2023-10-30 09:46:25.4987|INFO|infoLogger|l'utente ha inserito il numero: 1
+2023-10-30 09:47:06.4285|INFO|infoLogger|application started
+2023-10-30 09:47:07.4226|INFO|infoLogger|l'utente ha inserito il numero: 1
+2023-10-30 09:47:33.9037|INFO|infoLogger|application started
+2023-10-30 09:47:34.8541|INFO|infoLogger|l'utente ha inserito il numero: 1
+2023-10-30 09:47:35.9797|INFO|infoLogger|l'utente ha inserito il numero: 2
+2023-10-30 09:47:36.0002|INFO|infoLogger|application closed
+2023-10-30 09:47:55.8625|INFO|infoLogger|application started
+2023-10-30 09:48:22.7169|INFO|infoLogger|l'utente ha inserito il numero: 1
+2023-10-30 09:48:23.9817|INFO|infoLogger|l'utente ha inserito il numero: 2
+2023-10-30 09:48:24.0015|INFO|infoLogger|application closed
+2023-10-30 09:48:47.4410|INFO|infoLogger|application started
+2023-10-30 09:48:48.2450|INFO|infoLogger|l'utente ha inserito il numero: 1
+2023-10-30 09:48:49.8222|INFO|infoLogger|l'utente ha inserito il numero: 2
+2023-10-30 09:48:49.8444|INFO|infoLogger|application closed
+2023-10-30 09:49:37.9082|INFO|infoLogger|application started
+2023-10-30 09:49:38.8610|INFO|infoLogger|l'utente ha inserito il numero: 1
+2023-10-30 09:49:40.0199|INFO|infoLogger|l'utente ha inserito il numero: 2
+2023-10-30 09:49:40.0406|INFO|infoLogger|application closed
+2023-10-30 09:50:05.8468|INFO|infoLogger|application started
+2023-10-30 09:50:09.2706|INFO|infoLogger|l'utente ha inserito il numero: 1
+2023-10-30 09:50:10.3707|INFO|infoLogger|l'utente ha inserito il numero: 2
+2023-10-30 09:50:10.4065|INFO|infoLogger|application closed
+2023-10-30 09:50:53.1866|INFO|infoLogger|application started
+2023-10-30 09:51:40.4046|INFO|infoLogger|application started
+2023-10-30 09:51:41.1188|INFO|infoLogger|l'utente ha inserito il numero: 1
+2023-10-30 09:51:42.2642|INFO|infoLogger|l'utente ha inserito il numero: 2
+2023-10-30 09:51:42.2896|INFO|infoLogger|application closed
+2023-10-30 09:52:20.7368|INFO|infoLogger|application started
+2023-10-30 09:52:21.5840|INFO|infoLogger|l'utente ha inserito il numero: 1
+2023-10-30 09:52:22.7116|INFO|infoLogger|l'utente ha inserito il numero: 2
+2023-10-30 09:52:22.7360|INFO|infoLogger|application closed
+2023-10-30 09:53:15.9819|INFO|infoLogger|application started
+2023-10-30 09:53:16.5914|INFO|infoLogger|l'utente ha inserito il numero: 1
+2023-10-30 09:53:17.4047|INFO|infoLogger|l'utente ha inserito il numero: 2
+2023-10-30 09:53:40.1407|INFO|infoLogger|application started
+2023-10-30 09:53:40.7633|INFO|infoLogger|l'utente ha inserito il numero: 1
+2023-10-30 09:53:41.8717|INFO|infoLogger|l'utente ha inserito il numero: 2
+2023-10-30 09:54:54.8130|INFO|infoLogger|application started
+2023-10-30 09:54:58.3560|INFO|infoLogger|l'utente ha inserito il numero: 1
+2023-10-30 09:54:59.6225|INFO|infoLogger|l'utente ha inserito il numero: 2
+2023-10-30 09:55:29.8016|INFO|infoLogger|application started
+2023-10-30 09:56:38.1821|INFO|infoLogger|l'utente ha inserito il numero: 1
+2023-10-30 09:56:39.4610|INFO|infoLogger|l'utente ha inserito il numero: 2
+2023-10-30 09:57:13.9512|INFO|infoLogger|application started
+2023-10-30 09:57:15.6926|INFO|infoLogger|l'utente ha inserito il numero: 1
+2023-10-30 09:57:17.0757|INFO|infoLogger|l'utente ha inserito il numero: 2
+2023-10-30 09:57:59.3152|INFO|infoLogger|application started
+2023-10-30 09:58:07.3129|INFO|infoLogger|l'utente ha inserito il numero: 1
+2023-10-30 09:58:08.2022|INFO|infoLogger|l'utente ha inserito il numero: 2
+2023-10-30 09:58:18.1464|INFO|infoLogger|application started
+2023-10-30 09:58:18.9822|INFO|infoLogger|l'utente ha inserito il numero: 1
+2023-10-30 09:58:19.8464|INFO|infoLogger|l'utente ha inserito il numero: 2
+2023-10-30 09:59:00.6598|INFO|infoLogger|application started
+2023-10-30 09:59:02.0297|INFO|infoLogger|l'utente ha inserito il numero: 1
+2023-10-30 09:59:02.7287|INFO|infoLogger|l'utente ha inserito il numero: 2
+2023-10-30 09:59:17.7343|INFO|infoLogger|application started
+2023-10-30 09:59:18.3126|INFO|infoLogger|l'utente ha inserito il numero: 1
+2023-10-30 09:59:19.0217|INFO|infoLogger|l'utente ha inserito il numero: 2
+2023-10-30 09:59:28.4706|INFO|infoLogger|application started
+2023-10-30 09:59:29.9160|INFO|infoLogger|l'utente ha inserito il numero: 1
+2023-10-30 09:59:30.7209|INFO|infoLogger|l'utente ha inserito il numero: 2
+2023-10-30 10:00:09.6259|INFO|infoLogger|application started
+2023-10-30 10:00:10.3686|INFO|infoLogger|l'utente ha inserito il numero: 1
+2023-10-30 10:00:11.1589|INFO|infoLogger|l'utente ha inserito il numero: 2
+2023-10-30 10:00:46.3625|INFO|infoLogger|application started
+2023-10-30 10:00:47.0056|INFO|infoLogger|l'utente ha inserito il numero: 1
+2023-10-30 10:00:47.6553|INFO|infoLogger|l'utente ha inserito il numero: 2

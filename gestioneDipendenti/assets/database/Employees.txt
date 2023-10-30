@@ -6,4 +6,4 @@ R002;Geppo Il Folle;Operaio;Addetto Servizio Mensa;45;Cala delle Sirene 44;Messi
 R025;Porfirio Cecato;Impiegato;Contabilità;38;Viale Guerrieri della Galassia 8;Bergamo;20002;39335
 M154;Jenny Sapone;Impiegata;Contabilità;47;Piazzetta dei Puffi 721;Venezia;VE;00003;00998810
 T098;Vespasiano Titillo;Operaio;Manutenzione;42;Viottolo delle CImici Profumate 1000;Roma;Roma;00000;3303942
-S027;Gianno Pocuciu;Operaio;Manutenzione;50;Via dei Licantropi Spaventati 8887;Matera:MT;01000;28230
+S027;Gianno Pocuciu;Operaio;Manutenzione;5;Via dei Licantropi Spaventati 8887;Matera;MT;01000;28230
