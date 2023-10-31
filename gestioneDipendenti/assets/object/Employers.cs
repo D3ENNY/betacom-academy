@@ -14,7 +14,8 @@ class Employers : PersonData
     public override string Province { get; set; } = "";
     public override string Cap { get; set; } = "";
     public override int PhoneNumber { get; set; }
-    internal static List<EmployersActivity> EmployersActivitiesList{get; private set;} = new();
+    internal static List<EmployersActivity> TotalEmployersActivitiesList{get; private set;} = new();
+    internal List<EmployersActivity> EmployersActivities{get; private set;} = new();
 
     internal string GetDataObj() => $"|{RegisterId}{new string(' ', 5-RegisterId.Length)} | " + 
                                     $"{Nominative}{new string(' ', 35-Nominative.Length)} | " +

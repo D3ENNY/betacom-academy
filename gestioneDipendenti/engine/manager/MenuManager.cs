@@ -48,9 +48,18 @@ class MenuManager
                                                         $"Attività{new string(' ', 15-"Attività".Length)} | " +
                                                         $"Ore{new string(' ', 3-"Ore".Length)} |\n" + 
                                                         new string('=', 57));
+
     internal static void HeaderAvgDepartment() => Console.WriteLine($"| Reparto{new string(' ', 35-"Reparto".Length)} | " +
                                              $"Età media{new string(' ', 10-"Età media".Length)} |\n" +
-                                             new string('=', 51));                      
+                                             new string('=', 51));     
+
+    internal static void HeaderHourDepartment() => Console.WriteLine($"| Reparto{new string(' ', 35-"Reparto".Length)} | " +
+                                             $"ore totali{new string(' ', 10-"ore totali".Length)} |\n" +
+                                             new string('=', 52));                      
+
+    internal static void HeaderHourNominative() => Console.WriteLine($"| Dipendente{new string(' ', 35-"Dipendente".Length)} | " +
+                                             $"ore totali{new string(' ', 10-"ore totali".Length)} |\n" +
+                                             new string('=', 52));                      
     private static void EmployeesDataMenu(){
         Console.Clear();
         Console.WriteLine(@"
@@ -133,12 +142,18 @@ class MenuManager
                 break;
             case 3:
                 //totale ore lavoro per reparto
+                infoLogger.Info("calcolo ore lavoro per reparto");
+                DataManager.HourDepartmenet();
                 break;
             case 4:
                 //totale ore lavoro per nominativo
+                infoLogger.Info("totale ore lavoro per nominativo");
+                DataManager.HourNominative();
                 break;
             case 5:
                 //totale ore straordinarie
+                infoLogger.Info("totale ore straordinarie");
+                DataManager.OvertimeHour();
                 break;
             case 6:
                 //totale ore straordinarie per nominativo
