@@ -11,4 +11,8 @@
     <PackageReference Include="Nlog" Version="5.2.5" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ToolBoxLibrary\ToolBoxLibrary.csproj" />
+  </ItemGroup>
+
 </Project>
