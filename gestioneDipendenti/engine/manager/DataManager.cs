@@ -139,11 +139,57 @@ class DataManager
     internal static void HolidayHour()
     {
         Console.Clear();
-        
+
         int HolidayHour = Employers.TotalEmployersActivitiesList
         .Where(x => x.Activity.Equals("Ferie"))
         .Sum(x => x.AmountHour);
 
         Console.Write($"{new string('=', 38)}\n| totale delle ore di ferie sono: {HolidayHour} |\n{new string('=', 38)}\n");
+    }
+
+    internal static void HolidayHourNominative()
+    {
+        Console.Clear();        
+        
+        var HolidayGroup = (
+            from Activity in Employers.TotalEmployersActivitiesList
+            join Employer in employersList on
+                Activity.EmployerID equals Employer.RegisterId
+            where Activity.Activity == "Ferie"
+            group Activity by Activity.EmployerID
+            into Group select new
+            {
+                Nominative = employersList.First(x => x.RegisterId.Equals(Group.Key)).Nominative,
+                hour = Group.Sum(x => x.AmountHour)
+            }
+        ).ToList();
+
+        MenuManager.HeaderHoldidayNominative();
+        HolidayGroup.ForEach(x => Console.WriteLine($"| {x.Nominative}{new string(' ', 35-x.Nominative.Length)} | {x.hour}{new string(' ', 18-x.hour.ToString().Length)}|"));
+        Console.WriteLine(new string('=', 59));
+    }
+
+    internal static void PreHolidayHour()
+    {
+        Console.Clear();
+
+        var preHolidayGroup = Employers.TotalEmployersActivitiesList
+        .Where(x => x.Activity.Equals("Pre Festivo"))
+        .Select(x =>
+        {
+            string nominative = employersList.First(e => e.RegisterId.Equals(x.EmployerID)).Nominative;
+
+            return new
+            {
+                Nominative = nominative,
+                Data = x.Date,
+                Hour = x.AmountHour
+            };
+        }).ToList();
+
+        MenuManager.HeaderPreHoldidayNominative();
+        preHolidayGroup.ForEach(x => Console.WriteLine($"| {x.Nominative}{new string(' ', 35-x.Nominative.Length)} | {x.Data.ToString("dd/MM/yyyy")}{new string(' ', 10-x.Data.ToString("dd/MM/yyyy").Length)} | {x.Hour}{new string(' ', 24-x.Hour.ToString().Length)}|"));
+        Console.WriteLine(new string('=', 78));
+
     }
 }
