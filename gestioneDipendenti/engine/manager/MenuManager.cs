@@ -59,7 +59,11 @@ class MenuManager
 
     internal static void HeaderHourNominative() => Console.WriteLine($"| Dipendente{new string(' ', 35-"Dipendente".Length)} | " +
                                              $"ore totali{new string(' ', 10-"ore totali".Length)} |\n" +
-                                             new string('=', 52));                      
+                                             new string('=', 52));   
+
+    internal static void HeaderOvertimeHourNominative() => Console.WriteLine($"| Dipendente{new string(' ', 35-"Dipendente".Length)} | " +
+                                             $"ore straordinarie totali{new string(' ', 25-"ore straordinarie totali".Length)} |\n" +
+                                             new string('=', 67));                      
     private static void EmployeesDataMenu(){
         Console.Clear();
         Console.WriteLine(@"
@@ -157,9 +161,13 @@ class MenuManager
                 break;
             case 6:
                 //totale ore straordinarie per nominativo
+                infoLogger.Info("totale ore straordinarie per nominativo");
+                DataManager.OvertimeHourNominative();
                 break;
             case 7:
                 //totale ore ferie
+                infoLogger.Info("totale ore ferie");
+                DataManager.HolidayHour();
                 break;
             case 8:
                 //ore ferie per nominativo

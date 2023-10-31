@@ -1,3 +1,4 @@
+using System.ComponentModel.Design;
 using System.Text.RegularExpressions;
 using gestioneDipendenti.obj;
 using ToolBoxLibrary.FileBox;
@@ -32,6 +33,7 @@ class DataManager
     internal static void AvgAgeEmployer()
     {
         Console.Clear();
+
         double avg = employersList.Average(x => x.Age);
         Console.Write($"{new string('=', 44)}\n| la media dell'età dei dipendenti è: {avg} |\n{new string('=', 44)}\n");
     }
@@ -39,6 +41,7 @@ class DataManager
     internal static void AvgAgeDepartment()
     {
         Console.Clear();
+
         var avgGroup = (
             from Employer in employersList
             group Employer by Employer.Department 
@@ -57,6 +60,7 @@ class DataManager
     internal static void HourDepartmenet()
     {
         Console.Clear();
+
         var hourGroup = (
             from Employer in employersList
             join Activity in Employers.TotalEmployersActivitiesList on
@@ -83,7 +87,7 @@ class DataManager
         .Select( x => 
         {
             var hours = x.EmployersActivities
-            .Where(a => a.Activity != "Ferie")
+            .Where(a => !a.Activity.Equals("Ferie"))
             .Sum(a => a.AmountHour);
             
             return new
@@ -101,6 +105,45 @@ class DataManager
 
     internal static void OvertimeHour()
     {
+        Console.Clear();
+
+        int hour = Employers.TotalEmployersActivitiesList
+        .Where(x => x.AmountHour > 8)
+        .Sum(x => x.AmountHour-8);
+
+        Console.Write($"{new string('=', 45)}\n| totale delle ore di straordinari sono: {hour} |\n{new string('=', 45)}\n");
+    }
+
+    internal static void OvertimeHourNominative()
+    {
+        Console.Clear();
+
+        var hourGroup = (
+            from Activity in Employers.TotalEmployersActivitiesList
+            join Employer in employersList on
+                Activity.EmployerID equals Employer.RegisterId
+            where Activity.AmountHour > 8
+            group Activity by Activity.EmployerID
+            into Group select new
+            {
+                Nominative = employersList.First(x => x.RegisterId.Equals(Group.Key)).Nominative,
+                hour = Group.Sum(x => x.AmountHour - 8)
+            }
+        ).ToList();
+
+        MenuManager.HeaderOvertimeHourNominative();
+        hourGroup.ForEach(x => Console.WriteLine($"| {x.Nominative}{new string(' ', 35-x.Nominative.Length)} | {x.hour}{new string(' ', 26-x.hour.ToString().Length)}|"));
+        Console.WriteLine(new string('=', 67));
+    }
+
+    internal static void HolidayHour()
+    {
+        Console.Clear();
         
+        int HolidayHour = Employers.TotalEmployersActivitiesList
+        .Where(x => x.Activity.Equals("Ferie"))
+        .Sum(x => x.AmountHour);
+
+        Console.Write($"{new string('=', 38)}\n| totale delle ore di ferie sono: {HolidayHour} |\n{new string('=', 38)}\n");
     }
 }
