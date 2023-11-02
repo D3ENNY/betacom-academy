@@ -29,6 +29,21 @@ class Employers : PersonData
     internal static List<EmployersActivity> TotalEmployersActivitiesList{get; private set;} = new();
     public List<EmployersActivity> EmployersActivities{get; set;} = new();
 
+    public Employers() { /*the silent is golden */}
+    internal Employers(string RegisterId, string Nominative, string Role, string Department, string Age, string Address, string City, string Province, string Cap, string PhoneNumber)
+    {
+        this.RegisterId = RegisterId;
+        this.Nominative = Nominative;
+        this.Role = Role;
+        this.Department = Department;
+        if (int.TryParse(Age, out int parsedAge)) this.Age = parsedAge;
+        this.Address = Address;
+        this.City = City;
+        this.Province = Province;
+        this.Cap = Cap;
+        if(int.TryParse(PhoneNumber, out int parsedPhoneNumber)) this.PhoneNumber = parsedPhoneNumber;
+    }
+
     internal string GetDataObj() => $"|{RegisterId}{new string(' ', 5-RegisterId.Length)} | " + 
                                     $"{Nominative}{new string(' ', 35-Nominative.Length)} | " +
                                     $"{Role}{new string(' ', 20-Role.Length)} | " +

@@ -21,7 +21,7 @@ class Program
                 MenuManager.Show();
                 if(int.TryParse(Console.ReadLine(), out choise))
                     MenuManager.HandleChoise(choise);
-            }while(choise != 5);
+            }while(choise != 6);
         }
         catch (Exception ex)
         {

@@ -15,6 +15,15 @@ class EmployersActivity{
     private static int IdCnt = 0;
 
     public EmployersActivity() => this.Id = ++IdCnt;
+    
+    public EmployersActivity(string Date, string Activity, string AmountHour, string EmployerID)
+    {
+        this.Id = ++IdCnt;
+        this.Date = Convert.ToDateTime(Date);
+        this.Activity = Activity;
+        if (int.TryParse(AmountHour, out int parsedAmountHour)) this.AmountHour = parsedAmountHour;
+        this.EmployerID = EmployerID;
+    }
 
     public override string ToString() => $@"id: {Id}
     matricola: {EmployerID}

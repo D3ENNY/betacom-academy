@@ -1,13 +1,17 @@
 using gestioneDipendenti.obj;
 using NLog;
+using ToolBoxLibrary.DatabaseBox;
 using ToolBoxLibrary.FileBox;
 namespace gestioneDipendenti.engine;
 
 class DataManager
 {
     internal static List<Employers> employersList = new();
+
+    private static readonly Logger errorLogger = LogManager.GetLogger("errorLogger");
+
     private static readonly FileBox fb = new();
-    private static readonly Logger errorLogger = LogManager.GetLogger("errorLogger"); 
+    private static readonly DatabaseBox db = new(Constant.connStr);
 
     internal static void LoadFromFile()
     {
@@ -20,6 +24,44 @@ class DataManager
         }catch(Exception ex)
         {
             errorLogger.Error("laodFromFile function\n"+ex);
+        }
+    }
+
+    internal static void LoadFromDatabase()
+    {
+        try
+        {
+            List<Dictionary<string,string>> employerResult= db.Query(Constant.getEmployerQuery);
+
+
+            employerResult.Where(x => !employersList.Any(e =>
+                e.RegisterId.Equals(x["Matricola"]))
+            ).ToList()
+            .ForEach(v => employersList.Add(new Employers(
+                v["Matricola"],
+                v["Nominativo"],
+                v["Ruolo"],
+                v["Reparto"],
+                v["Eta"],
+                v["Indirizzo"],
+                v["Citta"],
+                v["Provincia"],
+                v["CAP"],
+                v["Telefono"]
+             )));
+
+            List<Dictionary<string,string>> employerActivityResult= db.Query(Constant.getEmployerActivityQuery);
+            Employers.TotalEmployersActivitiesList.AddRange(
+               employerActivityResult.Select(x => new EmployersActivity(x["DataAttivita"], x["Attivita"], x["Ora"], x["Matricola"])).ToList()
+            );
+
+            employersList.ForEach(x =>
+            x.EmployersActivities.AddRange(Employers.TotalEmployersActivitiesList.Where(e => e.EmployerID == x.RegisterId))
+            );
+        }
+        catch(Exception ex)
+        {
+            errorLogger.Error("LoadFromDatabase function\n" + ex);
         }
     }
 
@@ -41,6 +83,13 @@ class DataManager
             errorLogger.Error("ViewData function\n", ex);
         }
 
+    }
+
+    internal static void deleteEmployer(string id)
+    {
+        employersList.Remove(
+            employersList.Find(x => x.RegisterId.Equals(id)) ?? new()
+        );
     }
 
     internal static void AvgAgeEmployer()

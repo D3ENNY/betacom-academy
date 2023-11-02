@@ -17,6 +17,7 @@ class MenuManager
           [2] visualizza dati
           [3] estrazione dati
           [4] serializzazione dati in JSON
+          [5] carica da database
           [5] esci
         ======================================
         ");
@@ -130,6 +131,9 @@ class MenuManager
                     DataManager.WriteOnJson();
                 break;
             case 5:
+                DataManager.LoadFromDatabase();
+                break;
+            case 6:
                 //the silent is golden
                 break;
             default:
