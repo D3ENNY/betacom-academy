@@ -125,6 +125,7 @@ class MenuManager
                 break;
             case 4: 
                 //serializzazione in JSON
+                infoLogger.Info("l'utente ha serializzato il database in un file json");
                 if(DataManager.employersList.Count > 0)
                     DataManager.WriteOnJson();
                 break;
