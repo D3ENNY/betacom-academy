@@ -7,10 +7,10 @@ namespace gestioneDipendenti.engine;
 class DataManager
 {
     internal static List<Employers> employersList = new();
+    private static FileBox fb = new();
 
     internal static void LoadFromFile()
     {
-        FileBox fb = new();
         employersList.AddRange(fb.ReadTxt<Employers>(Constant.sepFile.ToString(), Constant.employerPath));
         Employers.TotalEmployersActivitiesList.AddRange(fb.ReadTxt<EmployersActivity>(Constant.sepFile.ToString(), Constant.employerActivityPath));
         employersList.ForEach(x => 
@@ -191,5 +191,10 @@ class DataManager
         preHolidayGroup.ForEach(x => Console.WriteLine($"| {x.Nominative}{new string(' ', 35-x.Nominative.Length)} | {x.Data.ToString("dd/MM/yyyy")}{new string(' ', 10-x.Data.ToString("dd/MM/yyyy").Length)} | {x.Hour}{new string(' ', 24-x.Hour.ToString().Length)}|"));
         Console.WriteLine(new string('=', 78));
 
+    }
+
+    internal static void WriteOnJson()
+    {
+        fb.writeJson(employersList, Constant.employerJson);
     }
 }

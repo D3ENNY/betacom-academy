@@ -125,6 +125,8 @@ class MenuManager
                 break;
             case 4: 
                 //serializzazione in JSON
+                if(DataManager.employersList.Count > 0)
+                    DataManager.WriteOnJson();
                 break;
             case 5:
                 //the silent is golden

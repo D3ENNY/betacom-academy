@@ -1,21 +1,33 @@
 using static gestioneDipendenti.obj.Person;
+using ToolBoxLibrary.Attr;
 
 namespace gestioneDipendenti.obj;
 
 class Employers : PersonData
 {
+    [TXTReader]
     public override string RegisterId { get; set; } = "";
+    [TXTReader]
     public override string Nominative { get; set; } = "";
+    [TXTReader]
     public string Role{get;set;} = "";
+    [TXTReader]
     public string Department{get;set;} = "";
+    [TXTReader]
     public override int Age { get; set; }
+    [TXTReader]
     public override string Address { get; set; } = "";
+    [TXTReader]
     public override string City { get; set; } = "";
+    [TXTReader]
     public override string Province { get; set; } = "";
+    [TXTReader]
     public override string Cap { get; set; } = "";
+    [TXTReader]
     public override int PhoneNumber { get; set; }
+    [TXTReader]
     internal static List<EmployersActivity> TotalEmployersActivitiesList{get; private set;} = new();
-    internal List<EmployersActivity> EmployersActivities{get; private set;} = new();
+    public List<EmployersActivity> EmployersActivities{get; set;} = new();
 
     internal string GetDataObj() => $"|{RegisterId}{new string(' ', 5-RegisterId.Length)} | " + 
                                     $"{Nominative}{new string(' ', 35-Nominative.Length)} | " +

@@ -1,9 +1,15 @@
+using ToolBoxLibrary.Attr;
+
 namespace gestioneDipendenti.obj;
 
 class EmployersActivity{
+    [TXTReader]
     public DateTime Date{get;set;}
+    [TXTReader]
     public string Activity{get;set;} = "";
+    [TXTReader]
     public int AmountHour{get;set;}
+    [TXTReader]
     public string EmployerID{get;set;} = "";
     internal int Id{get; private set;}
     private static int IdCnt = 0;

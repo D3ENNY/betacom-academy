@@ -399,5 +399,6 @@ FodyWeavers.xsd
 #app
 
 assets/log
+assets/output
 bin/
 obj/
