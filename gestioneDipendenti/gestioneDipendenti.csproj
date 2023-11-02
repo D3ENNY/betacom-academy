@@ -15,4 +15,8 @@
     <ProjectReference Include="..\ToolBoxLibrary\ToolBoxLibrary.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="assets\output\" />
+  </ItemGroup>
+
 </Project>
