@@ -259,7 +259,7 @@ class DataManager
     {
         try
         {
-            fb.writeJson(employersList, Constant.employerJson);
+            fb.WriteJson(employersList, Constant.employerJson);
         }
         catch (Exception ex)
         {
