@@ -1,12 +1,5 @@
-fetch("https://localhost:7210")
-.then(response => response.json())
-.then(data =>{
-    console.log(data)
-})
-.catch(err => console.log(err))
-
 function getEmployers () {
-    fetch("https://localhost:7210")
+    fetch("https://localhost:7210/api/AnagraficaGenerales")
     .then(response => response.json())
     .then(data =>{
         console.log(data)
