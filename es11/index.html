@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    
+        <script src="script.js" defer></script>
+        <title>Document</title>
+    </head>
+<body class="h-screen bg-slate-800">
+    <div class="flex item-center justify-center mt-10">
+        <div class="">
+            <h1 class="uppercase text-yellow-400 pb-5 text-center text-2xl">LAMPADA</h1>
+            <img width="326" id="lamp" src="assets/img/onLamp.png">
+            <div class="flex mt-40 item-ceneter justify-center">
+                <a href="#" id="btn" class="relative inline-flex items-center justify-center inline-block p-4 px-5 py-3 overflow-hidden font-medium text-indigo-600 rounded-lg shadow-2xl group">
+                    <span class="absolute top-0 left-0 w-40 h-40 -mt-10 -ml-3 transition-all duration-700 bg-red-500 rounded-full blur-md ease"></span>
+                    <span class="absolute inset-0 w-full h-full transition duration-700 group-hover:rotate-180 ease">
+                        <span class="absolute bottom-0 left-0 w-24 h-24 -ml-10 bg-purple-500 rounded-full blur-md"></span>
+                        <span class="absolute bottom-0 right-0 w-24 h-24 -mr-10 bg-pink-500 rounded-full blur-md"></span>
+                    </span>
+                    <span class="relative text-white">SWITCH</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
