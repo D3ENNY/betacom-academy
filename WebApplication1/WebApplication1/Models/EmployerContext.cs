@@ -19,9 +19,6 @@ public partial class EmployerContext : DbContext
 
     public virtual DbSet<AttivitaDipendenti> AttivitaDipendentis { get; set; }
 
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        => optionsBuilder.UseSqlServer("Server=.\\SQLEXPRESS;Database=employer;Trusted_Connection=True;TrustServerCertificate=True;");
-
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<AnagraficaGenerale>(entity =>

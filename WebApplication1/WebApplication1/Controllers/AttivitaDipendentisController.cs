@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using WebApplication1.Models;
 
@@ -50,15 +45,16 @@ namespace WebApplication1.Controllers
         }
 
         // PUT: api/AttivitaDipendentis/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutAttivitaDipendenti(int id, AttivitaDipendenti attivitaDipendenti)
+        public async Task<IActionResult> PutAttivitaDipendenti(int id, AttivitaDipendenti? attivitaDipendenti)
         {
             if (id != attivitaDipendenti.Id)
             {
                 return BadRequest();
             }
 
+            attivitaDipendenti.MatricolaNavigation = attivitaDipendenti.MatricolaNavigation != null ? null : attivitaDipendenti.MatricolaNavigation; 
+            
             _context.Entry(attivitaDipendenti).State = EntityState.Modified;
 
             try
@@ -81,7 +77,6 @@ namespace WebApplication1.Controllers
         }
 
         // POST: api/AttivitaDipendentis
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
         public async Task<ActionResult<AttivitaDipendenti>> PostAttivitaDipendenti(AttivitaDipendenti attivitaDipendenti)
         {
@@ -89,13 +84,15 @@ namespace WebApplication1.Controllers
           {
               return Problem("Entity set 'EmployerContext.AttivitaDipendentis'  is null.");
           }
+            attivitaDipendenti.MatricolaNavigation = attivitaDipendenti.MatricolaNavigation != null ? null : attivitaDipendenti.MatricolaNavigation;
+
             _context.AttivitaDipendentis.Add(attivitaDipendenti);
             await _context.SaveChangesAsync();
 
             return CreatedAtAction("GetAttivitaDipendenti", new { id = attivitaDipendenti.Id }, attivitaDipendenti);
         }
 
-        // DELETE: api/AttivitaDipendentis/5
+        // DELETE: api/AttivitaDipendentis
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteAttivitaDipendenti(int id)
         {
