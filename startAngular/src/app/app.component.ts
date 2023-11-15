@@ -4,11 +4,12 @@ import { RouterOutlet } from '@angular/router';
 import {FormsModule} from '@angular/forms'
 
 import { Employee } from './app.Employees';
+import { EmployeesComponent } from './features/Employees/employees.component';
 
 @Component({
 	selector: 'app-root',
 	standalone: true,
-	imports: [CommonModule, RouterOutlet, FormsModule],
+	imports: [CommonModule, RouterOutlet, FormsModule, EmployeesComponent],
 	templateUrl: './app.component.html',
 	styleUrls: ['./app.component.css'],
 })
