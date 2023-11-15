@@ -27,10 +27,10 @@
 
 	<hr /><br>
 
-	<ul *ngFor="let flm of moviesList" [ngSwitch]="flm.director">
-		<li *ngSwitchCase="'george lucas'" class="text-lime-500">{{ flm.title }} - {{ flm.year }}</li>
-		<li *ngSwitchCase="'Wachowski'" class="text-teal-500">{{ flm.title }} - {{ flm.year }}</li>
-		<li *ngSwitchCase="'peter jackson'" class="text-red-700">{{ flm.title }} - {{ flm.year }}</li>
+	<ul *ngFor="let flm of moviesList; let idx = index; let first = first; let last = last" [ngSwitch]="flm.director">
+		<li *ngSwitchCase="'george lucas'" class="text-lime-500">{{idx}} - {{ flm.title }} - {{ flm.year }} - {{first}} - {{last}}</li>
+		<li *ngSwitchCase="'Wachowski'" class="text-teal-500">{{idx}} - {{ flm.title }} - {{ flm.year }} - {{first}} - {{last}}</li>
+		<li *ngSwitchCase="'peter jackson'" class="text-red-700">{{idx}} - {{ flm.title }} - {{ flm.year }} - {{first}} - {{last}}</li>
 		<li *ngSwitchDefault=""></li>
 	</ul>
 
@@ -39,5 +39,12 @@
 	<div [ngClass]="{'pippo': isOK}"> test </div>
 	<div [ngStyle]="{'font-size': '30px'}"> test</div>
 
+	<hr><br>
+
+	<p>{{moviesList|json}}</p>
+	<p>{{num1|number:'3.1-2'}}</p>
+	<p>{{tDay|date:'shortDate'}}</p>
+
+	<hr><br>
 </div>
 <router-outlet></router-outlet>

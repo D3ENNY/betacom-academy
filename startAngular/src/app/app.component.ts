@@ -18,6 +18,8 @@ export class AppComponent {
 	btnDisabled: boolean = true
 	bidirezionale: string = "ciaouu"
 	isOK: boolean = true
+	num1: number = 2.2341
+	tDay: Date = new Date()
 
 	emp: Employee = new Employee('','','','')
 
