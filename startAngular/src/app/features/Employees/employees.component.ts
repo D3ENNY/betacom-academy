@@ -1,4 +1,3 @@
-import { Employee } from './../../app.Employees';
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NavbarComponent } from '../../core/navbar/navbar.component'
