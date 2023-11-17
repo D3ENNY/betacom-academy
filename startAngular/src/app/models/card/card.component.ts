@@ -1,7 +1,6 @@
 import { Component, Input, OnChanges } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { EmployeesComponent } from '../../features/Employees/employees.component';
-import { ObjectsService } from '../../shared/services/objects.service';
 import { RouterModule } from '@angular/router';
 import { ActivitiesComponent } from '../../features/Activities/Activities.component';
 

@@ -17,7 +17,5 @@ export class ActivitiesComponent {
 
     toggle() {
         this.state = this.state ? false : true
-        console.log(this.state);
-        
     }
 }
