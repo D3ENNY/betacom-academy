@@ -1,0 +1,16 @@
+<span class="border border-gray-600 bg-slate-600 rounded-xl p-1 hover:bg-slate-700 hover:border-slate-700 cursor-pointer" (click)="toggle()">toggle activities</span>
+<ng-container *ngIf="state; then show"></ng-container>
+<ng-template #show>
+    <ng-container *ngFor="let act of activity">
+        <div class="border-b-2 border-gray-600 p-2">
+            <p class="font-bold text-gray-700 dark:text-gray-400">
+                data:
+                <span id="data" class="font-normal pr-1 border-r-2 border-gray-600">{{ act.dataAttivita | date:'dd/MM/yy' }}</span>
+                attività: 
+                <span id="attivita" class="font-normal pr-1 border-r-2 border-gray-600">{{ act.attivita }}</span>
+                ore:
+                <span id="ore" class="font-normal">{{ act.ore }}h</span>
+            </p>
+        </div>
+    </ng-container>
+</ng-template>
