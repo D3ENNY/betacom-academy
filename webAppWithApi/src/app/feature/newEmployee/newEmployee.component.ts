@@ -1,52 +1,52 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { EmployeeCallsService } from '../../shared/CRUDhttp/employer-call-service.service';
-import { Employee } from '../../shared/object/Employee';
+import { Attivita, Employee } from '../../shared/object/Employee';
+import { FormsModule, NgForm } from '@angular/forms';
 
 @Component({
 	selector: 'app-newEmployee',
 	templateUrl: './newEmployee.component.html',
 	standalone: true,
-	imports: [CommonModule],
+	imports: [CommonModule, FormsModule],
 	providers: [EmployeeCallsService]
 })
 export class NewEmployeeComponent {
 
 	emp: Employee = new Employee();
 
-	constructor(private wService: EmployeeCallsService){
+	constructor(private wService: EmployeeCallsService){ }
+
+	submit(frm: NgForm) {
 		this.emp = {
-			matricola: "F076",
-			nominativo: "mario",
-			ruolo: "gpt",
-			reparto: "addetto IA",
-			eta: 34,
-			indirizzo: "via test",
-			citta: "milano",
-			provincia: "MI",
-			cap: "20345",
-			telefono: 1965434567,
+			matricola: frm.value.matricola, 
+			nominativo: frm.value.nominativo,
+			ruolo: frm.value.ruolo,
+			reparto: frm.value.reparto,
+			eta: frm.value.eta,
+			telefono: frm.value.telefono,
+			indirizzo: frm.value.indirizzo,
+			citta: frm.value.citta,
+			cap: frm.value.cap,
+			provincia: frm.value.provincia,
 			attivitaDipendentis: []
 		}
-
-		this.emp.attivitaDipendentis.push({
-			dataAttivita: new Date("2023-11-7"), 
-			attivita: "test", 
-			ore: 10, 
-			matricola: "F076", 
-			id: 184
-		})
+		this.insertEmployee(frm)
 	}
 
-	insertEmployee() {
+	insertEmployee(frm: NgForm) {
+		console.log(this.emp);
+		
 		this.wService.postEmployee(this.emp).subscribe({
 			next: (data: any) => {
-				console.log("inserimento avvenuto con successo");
+				console.log("inserimento avvenuto con successo")
+				frm.resetForm()
 			},
 			error: (err: any) => {
-			  console.log(err)
+				console.log(err);
+				alert(err.error.errors)
 			}
-		  })
+		})
 	}
 
 }

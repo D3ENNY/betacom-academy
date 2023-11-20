@@ -11,7 +11,7 @@ public partial class AttivitaDipendenti
     [Required]
     [DataType(DataType.DateTime)]
     [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = true)]
-    [PreviousDate(false, ErrorMessage = "DataAttivita must be previous than today")]
+    [PreviousDate(true, ErrorMessage = "DataAttivita must be previous than today")]
     public DateTime? DataAttivita { get; set; }
 
     [MinLength(3, ErrorMessage = "Attivita's min lenght must be equal to 3")]
@@ -27,7 +27,7 @@ public partial class AttivitaDipendenti
     [StringLength(4, ErrorMessage = "Matricola must be 4 lenght")]
     public string? Matricola { get; set; }
     [Key]
-    [RegularExpression(@"^\d+^", ErrorMessage = "id must be a number")]
+    //[RegularExpression(@"^\d+^", ErrorMessage = "id must be a number")]
     public int Id { get; set; }
 
     public virtual AnagraficaGenerale? MatricolaNavigation { get; set; } = null;

@@ -9,7 +9,7 @@ export class Employee {
     citta: string = ""
     provincia: string = ""
     cap: string = ""
-    telefono: number = 0
+    telefono: string = ""
     attivitaDipendentis: Attivita[] = []
 
     constructor() { }

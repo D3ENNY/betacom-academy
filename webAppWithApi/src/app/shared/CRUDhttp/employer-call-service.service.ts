@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import {Observable} from 'rxjs';
+import { Employee } from '../object/Employee';
 
 @Injectable({
   providedIn: 'root'
@@ -12,7 +13,7 @@ export class EmployeeCallsService {
     return this.http.get('https://localhost:7210/api/AnagraficaGenerales')
   }
 
-  postEmployee(employ: any){
+  postEmployee(employ: Employee){
     return this.http.post('https://localhost:7210/api/AnagraficaGenerales', employ)
   } 
 
