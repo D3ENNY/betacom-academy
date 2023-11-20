@@ -40,6 +40,7 @@ public partial class AnagraficaGenerale
 
     [StringLength(2, MinimumLength = 1, ErrorMessage = "Provincia must be an acronym with max lenght 2 and minimum lenght 1")]
     public string? Provincia { get; set; }
+
     [RegularExpression(@"^\d{5}$", ErrorMessage = "Cap must be a number with 5 digits")]
     public string? Cap { get; set; }
     [RegularExpression(@"^\d{10}$", ErrorMessage = "Telefono must be a number with italian format and without country code")]

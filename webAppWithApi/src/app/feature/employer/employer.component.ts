@@ -9,7 +9,7 @@ import { EmployeeCallsService } from '../../shared/CRUDhttp/employer-call-servic
 	standalone: true,
 	imports: [CommonModule, NavbarComponent, CardComponent],
 	templateUrl: './employer.component.html',
-    providers: [EmployeeCallsService]
+  providers: [EmployeeCallsService]
 })
 export class EmployeesComponent {
     employee: any[] = [];
@@ -25,7 +25,7 @@ export class EmployeesComponent {
         error: (err: any) => {
           console.log(err)
         }
-      });
+      })
     }
 
     ngOnInit(): void {

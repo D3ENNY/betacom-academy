@@ -27,7 +27,7 @@ public partial class AttivitaDipendenti
     [StringLength(4, ErrorMessage = "Matricola must be 4 lenght")]
     public string? Matricola { get; set; }
     [Key]
-    [RegularExpression(@"^\d+^", ErrorMessage = "Eta must be a number")]
+    [RegularExpression(@"^\d+^", ErrorMessage = "id must be a number")]
     public int Id { get; set; }
 
     public virtual AnagraficaGenerale? MatricolaNavigation { get; set; } = null;
