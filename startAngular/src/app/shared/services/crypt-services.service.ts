@@ -36,24 +36,10 @@ export class CryptService {
 	}
 
 	crypt(data: string) {	
-		try {
-			// Decodifica la chiave pubblica base64
-			const decodedPublicKey = forge.util.decode64(this.serverPublicKey);
+		const publicKeyForge = forge.pki.publicKeyFromAsn1(forge.asn1.fromDer(forge.util.decode64(this.serverPublicKey)))
+		const encryptedData = publicKeyForge.encrypt(data, 'RSA-OAEP');
 	
-			// Crea un oggetto ASN.1 dalla chiave pubblica DER
-			const asn1PublicKey = forge.asn1.fromDer(decodedPublicKey);
-	
-			// Ottieni l'oggetto chiave pubblica da ASN.1
-			const publicKeyForge = forge.pki.publicKeyFromAsn1(asn1PublicKey);
-	
-			// Crittografa i dati con la chiave pubblica
-			const encryptedData = forge.util.encode64(publicKeyForge.encrypt(data, 'RSA-OAEP'));
-	
-			return encryptedData;
-		} catch (error) {
-			console.error('Errore durante la crittografia:', error);
-		}
-		return ''
+		return encryptedData;
 	}
 
 	decrypt(encryptedData: string): string {
