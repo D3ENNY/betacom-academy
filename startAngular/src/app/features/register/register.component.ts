@@ -20,10 +20,11 @@ export class RegisterComponent {
   decrypted: string = ""
 
   ngOnInit(): void {
-
-    this.http.exchangeKey(this.cryptSw.publicKey).subscribe({
+    this.http.exchangeKey(this.cryptSw.convertFromPem(this.cryptSw.publicKey)).subscribe({
       next: (data: any) => {
         console.log("scambio chiave pubblica", data);
+        this.cryptSw.serverPublicKey = data.serverPublicKey
+        this.crypted = this.cryptSw.crypt(this.plainTxt)
       },
       error: (err: any) => {
         if (err.error instanceof ErrorEvent) {

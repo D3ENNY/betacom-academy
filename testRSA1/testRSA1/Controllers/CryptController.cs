@@ -31,6 +31,7 @@ namespace testRSA1.Controllers
             clientPublicKey ??= cm.getClientPK(request);
             ServerPublicKey = Convert.ToBase64String(serverPrivateKey.Modulus);
 
+            Console.WriteLine(clientPublicKey.Value);
             return Ok(new
             {
                 ServerPublicKey
