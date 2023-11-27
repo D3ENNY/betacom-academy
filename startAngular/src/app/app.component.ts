@@ -5,11 +5,12 @@ import {FormsModule} from '@angular/forms'
 
 import { Employee } from './app.Employees';
 import { NavbarComponent } from './core/navbar/navbar.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @Component({
 	selector: 'app-root',
 	standalone: true,
-	imports: [CommonModule, RouterOutlet, FormsModule, NavbarComponent],
+	imports: [CommonModule, RouterOutlet, HttpClientModule , FormsModule, NavbarComponent],
 	templateUrl: './app.component.html',
 	styleUrls: ['./app.component.css'],
 })
@@ -42,13 +43,13 @@ export class AppComponent {
 		}
 	]
 
-	constructor() {
-		console.log(this.abc);
-	}
+	// constructor() {
+	// 	console.log(this.abc);
+	// }
 
-	ngOnInit(): void {
-		this.myFirst()
-	}
+	// ngOnInit(): void {
+	// 	this.myFirst()
+	// }
 
 	myFirst() {
 		console.log("ciao from my init");

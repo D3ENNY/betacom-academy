@@ -10,39 +10,35 @@ export class CryptService {
 	publicKey: any
 	privateKey: any
 
+	serverPublicKey: any
+
 	constructor() {
 		this.rsa = forge.pki.rsa
+	}
+
+	ngOnInit(): void {
+
 		const keyPair = this.generateKeyPair()
 		this.publicKey = keyPair.publicKey
 		this.privateKey = keyPair.privateKey
-	}
-
-	convertPublicKey(publicKeyCs: string) {
-		const modulusMatch = publicKeyCs.match(/<Modulus>(.*?)<\/Modulus>/s)
-    	const exponentMatch = publicKeyCs.match(/<Exponent>(.*?)<\/Exponent>/s)
-
-		if(!modulusMatch || !exponentMatch)
-			throw new Error("formato della chiave pubblica non valido")
-
-		return forge.pki.setRsaPublicKey(
-			new forge.jsbn.BigInteger(forge.util.decode64(modulusMatch[1]), 256),
-			new forge.jsbn.BigInteger(forge.util.decode64(exponentMatch[1]), 256)
-		)
+		
+		
 	}
 
 	generateKeyPair() {
-		const keys = forge.pki.rsa.generateKeyPair({ bits: 1024 });
+		const keys = this.rsa.generateKeyPair({ bits: 1024 });
 		return {
 			publicKey: forge.pki.publicKeyToPem(keys.publicKey),
 			privateKey: forge.pki.privateKeyToPem(keys.privateKey),
 		}
 	}
 
-	crypt(data: string): string {
-		const key = forge.pki.publicKeyFromPem(this.publicKey);
-		const encrypted = key.encrypt(forge.util.encodeUtf8(data));
-		return forge.util.encode64(encrypted);
-	}
+	crypt(data: string) {
+		const publicKeyForge = forge.pki.publicKeyFromPem(this.serverPublicKey);
+		const encryptedData = publicKeyForge.encrypt(data, 'RSA-OAEP');
+	
+		return encryptedData;
+	  }
 
 	decrypt(encryptedData: string): string {
 		const key = forge.pki.privateKeyFromPem(this.privateKey);

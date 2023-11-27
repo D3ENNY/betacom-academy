@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\testRSA1.props" />
+</Project>

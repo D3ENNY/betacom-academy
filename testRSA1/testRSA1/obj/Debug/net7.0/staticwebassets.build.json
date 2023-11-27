@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "vSe4QCcI983q7An5ENvWC55IvpH4YyYlllx2YNAqn/k=",
+  "Source": "testRSA1",
+  "BasePath": "_content/testRSA1",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
