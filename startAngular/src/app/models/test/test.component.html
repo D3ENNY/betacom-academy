@@ -1,0 +1,48 @@
+<p class="text-slate-200">test one</p>
+<hr><br>
+
+<form #frm="ngForm" (submit)="submit(frm)">
+    <th>
+        <p class="text-white">form test</p>
+    </th>
+    <tr>
+        <td>
+            <input type="text" placeholder="name" [ngModel]="usr.name" name="name" id="name">
+            <label for="name"></label>
+        </td>
+        <td>
+            <input type="text" placeholder="surname" [ngModel]="usr.surname" name="surname" id="surname">
+            <label for="surname"></label>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button type="submit" class="border border-white text-white p-1 mt-2">invio</button>
+        </td>
+    </tr>
+</form>
+
+<hr><br>
+<p class="text-slate-200">test two</p>
+<hr><br>
+
+<form>
+    <th>
+        <p class="text-white">form test 2</p>
+    </th>
+    <tr>
+        <td>
+            <input #name type="text" placeholder="name" name="name" id="name">
+            <label for="name"></label>
+        </td>
+        <td>
+            <input #surname type="text" placeholder="surname" name="surname" id="surname">
+            <label for="surname"></label>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button type="submit" class="border border-white text-white p-1 mt-2" (click)="submitwo(name, surname)">invio</button>
+        </td>
+    </tr>
+</form>
