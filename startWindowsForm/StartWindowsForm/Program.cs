@@ -1,4 +1,4 @@
-namespace startWindowsForm
+namespace StartWindowsForm
 {
     internal static class Program
     {

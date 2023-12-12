@@ -1,0 +1,16 @@
+C:\Users\denny\source\repos\betacom-academy\StartWindowsForm\StartWindowsForm\bin\Debug\net7.0-windows\StartWindowsForm.exe
+C:\Users\denny\source\repos\betacom-academy\StartWindowsForm\StartWindowsForm\bin\Debug\net7.0-windows\StartWindowsForm.deps.json
+C:\Users\denny\source\repos\betacom-academy\StartWindowsForm\StartWindowsForm\bin\Debug\net7.0-windows\StartWindowsForm.runtimeconfig.json
+C:\Users\denny\source\repos\betacom-academy\StartWindowsForm\StartWindowsForm\bin\Debug\net7.0-windows\StartWindowsForm.dll
+C:\Users\denny\source\repos\betacom-academy\StartWindowsForm\StartWindowsForm\bin\Debug\net7.0-windows\StartWindowsForm.pdb
+C:\Users\denny\source\repos\betacom-academy\StartWindowsForm\StartWindowsForm\obj\Debug\net7.0-windows\StartWindowsForm.Form1.resources
+C:\Users\denny\source\repos\betacom-academy\StartWindowsForm\StartWindowsForm\obj\Debug\net7.0-windows\StartWindowsForm.csproj.GenerateResource.cache
+C:\Users\denny\source\repos\betacom-academy\StartWindowsForm\StartWindowsForm\obj\Debug\net7.0-windows\StartWindowsForm.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\denny\source\repos\betacom-academy\StartWindowsForm\StartWindowsForm\obj\Debug\net7.0-windows\StartWindowsForm.AssemblyInfoInputs.cache
+C:\Users\denny\source\repos\betacom-academy\StartWindowsForm\StartWindowsForm\obj\Debug\net7.0-windows\StartWindowsForm.AssemblyInfo.cs
+C:\Users\denny\source\repos\betacom-academy\StartWindowsForm\StartWindowsForm\obj\Debug\net7.0-windows\StartWindowsForm.csproj.CoreCompileInputs.cache
+C:\Users\denny\source\repos\betacom-academy\StartWindowsForm\StartWindowsForm\obj\Debug\net7.0-windows\StartWindowsForm.dll
+C:\Users\denny\source\repos\betacom-academy\StartWindowsForm\StartWindowsForm\obj\Debug\net7.0-windows\refint\StartWindowsForm.dll
+C:\Users\denny\source\repos\betacom-academy\StartWindowsForm\StartWindowsForm\obj\Debug\net7.0-windows\StartWindowsForm.pdb
+C:\Users\denny\source\repos\betacom-academy\StartWindowsForm\StartWindowsForm\obj\Debug\net7.0-windows\StartWindowsForm.genruntimeconfig.cache
+C:\Users\denny\source\repos\betacom-academy\StartWindowsForm\StartWindowsForm\obj\Debug\net7.0-windows\ref\StartWindowsForm.dll

@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\denny\\source\\repos\\betacom-academy\\startWindowsForm\\startWindowsForm.csproj",
-      "projectName": "startWindowsForm",
-      "projectPath": "C:\\Users\\denny\\source\\repos\\betacom-academy\\startWindowsForm\\startWindowsForm.csproj",
+      "projectUniqueName": "C:\\Users\\denny\\source\\repos\\betacom-academy\\StartWindowsForm\\StartWindowsForm\\StartWindowsForm.csproj",
+      "projectName": "StartWindowsForm",
+      "projectPath": "C:\\Users\\denny\\source\\repos\\betacom-academy\\StartWindowsForm\\StartWindowsForm\\StartWindowsForm.csproj",
       "packagesPath": "C:\\Users\\denny\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\denny\\source\\repos\\betacom-academy\\startWindowsForm\\obj\\",
+      "outputPath": "C:\\Users\\denny\\source\\repos\\betacom-academy\\StartWindowsForm\\StartWindowsForm\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\denny\\AppData\\Roaming\\NuGet\\NuGet.Config",
