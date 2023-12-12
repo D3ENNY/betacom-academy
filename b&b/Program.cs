@@ -1,11 +1,15 @@
+using b_b.Models;
+using b_b.Blogic;
 
-namespace b_b
+namespace bnb
 {
     public class Program
     {
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+            builder.Services.Configure<AirBnBdbConfigure>(builder.Configuration.GetSection("noSqlbnB"));
+            builder.Services.AddSingleton<BnBService>();
 
             // Add services to the container.
 

@@ -47,6 +47,10 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.5.0, )"
+            },
+            "mongodb.driver": {
+              "target": "Package",
+              "version": "[2.22.0, )"
             }
           },
           "imports": [
