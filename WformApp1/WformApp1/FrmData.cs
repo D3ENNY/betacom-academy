@@ -8,11 +8,13 @@ namespace WformApp1
     {
 
         private WFormContext _context;
+        private User _user;
 
         public FrmData(User user, Login login)
         {
             InitializeComponent();
             login.Hide();
+            this._user = user;
 
             welcomeLabel.Text += $" {user.Name} {user.Surname}";
 
@@ -76,6 +78,32 @@ namespace WformApp1
         private void FrmData_Load(object sender, EventArgs e)
         {
             this._context = new();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            GroupBox gb = new()
+            {
+                Name = "grpDynamic",
+                Location = new Point(1050, 200),
+                Text = "Group Box Dinamico",
+                Size = new Size(400, 200),
+            };
+
+            TextBox tb = new()
+            {
+                Text = "Box Dinamico",
+                Location = new Point(30, 30),
+
+            };
+
+            gb.Controls.Add(tb);
+            this.Controls.Add(gb);
+        }
+
+        private void apiBtn_Click(object sender, EventArgs e)
+        {
+            _ = new Api(_user, this).ShowDialog(this);
         }
     }
 }

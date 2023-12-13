@@ -34,5 +34,10 @@ namespace WformApp1
             }
             return null;
         }
+
+        private void CancelBtn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

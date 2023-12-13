@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\denny\\source\\repos\\betacom-academy\\weatherCast\\weatherCast\\weatherCast.csproj": {}
+    "C:\\Users\\admin\\source\\repos\\betacom-academy\\weatherCast\\weatherCast\\weatherCast.csproj": {}
   },
   "projects": {
-    "C:\\Users\\denny\\source\\repos\\betacom-academy\\weatherCast\\weatherCast\\weatherCast.csproj": {
+    "C:\\Users\\admin\\source\\repos\\betacom-academy\\weatherCast\\weatherCast\\weatherCast.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\denny\\source\\repos\\betacom-academy\\weatherCast\\weatherCast\\weatherCast.csproj",
+        "projectUniqueName": "C:\\Users\\admin\\source\\repos\\betacom-academy\\weatherCast\\weatherCast\\weatherCast.csproj",
         "projectName": "weatherCast",
-        "projectPath": "C:\\Users\\denny\\source\\repos\\betacom-academy\\weatherCast\\weatherCast\\weatherCast.csproj",
-        "packagesPath": "C:\\Users\\denny\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\denny\\source\\repos\\betacom-academy\\weatherCast\\weatherCast\\obj\\",
+        "projectPath": "C:\\Users\\admin\\source\\repos\\betacom-academy\\weatherCast\\weatherCast\\weatherCast.csproj",
+        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\admin\\source\\repos\\betacom-academy\\weatherCast\\weatherCast\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\denny\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -68,7 +68,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
