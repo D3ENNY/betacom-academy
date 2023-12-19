@@ -9,16 +9,15 @@ class FirstWithClass extends React.Comment{
         }
     }
 
-    render() {
-        const obj = this.state
+    GetEmployersName() {
+        return this.state.nominativo
+    }
 
-        function GetEmployersName() {
-            return obj.nominativo
-        }
+    render() {
 
         return (
             <div>
-                <h1> Membro della mitica accadey {GetEmployersName()} </h1>
+                <h1> Membro della mitica accadey {this.GetEmployersName()} </h1>
             </div>
         )
     }
