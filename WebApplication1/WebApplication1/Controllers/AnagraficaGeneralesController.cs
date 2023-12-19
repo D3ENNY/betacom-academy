@@ -31,23 +31,18 @@ namespace WebApplication1.Controllers
         }
 
         // GET: api/AnagraficaGenerales/5
-        [HttpGet("{id}")]
-        public async Task<ActionResult<AnagraficaGenerale>> GetAnagraficaGenerale(string id)
+        [HttpGet("{phone}")]
+        public async Task<ActionResult<AnagraficaGenerale>> GetAnagraficaGenerale(string phone)
         {
             if (_context.AnagraficaGenerales == null)
-            {
                 return NotFound();
-            }
-            var anagraficaGenerale = await _context.AnagraficaGenerales
-                .Include(emp => emp.AttivitaDipendentis)
-                .FirstOrDefaultAsync(emp => emp.Matricola == id);
 
-            if (anagraficaGenerale == null)
-            {
+            var employee = await _context.AnagraficaGenerales.FirstOrDefaultAsync(e => e.Telefono.Trim() == phone);
+
+            if (employee == null)
                 return NotFound();
-            }
 
-            return anagraficaGenerale;
+            return employee;
         }
 
         // PUT: api/AnagraficaGenerales/5

@@ -55,6 +55,9 @@ public partial class EmployerContext : DbContext
             entity.Property(e => e.Telefono)
                 .HasMaxLength(15)
                 .IsFixedLength();
+            entity.Property(e => e.Paassword)
+                .HasMaxLength(256);
+                
         });
 
         modelBuilder.Entity<AttivitaDipendenti>(entity =>
