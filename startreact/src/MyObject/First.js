@@ -1,9 +1,19 @@
 import React from "react";
 
-function First() {
+const UseServices = ({Tservice}) => {
+
     return(
-        <p>sono il primo componente react chiamato First</p>
+        <div>
+            <h1>un saluto (forse) casuale</h1>
+            <h3>{Tservice.casualString}</h3>
+        </div>
     )
 }
 
-export default First
+function First() {
+    return(
+        <p>sono il primo componente react chiamato First</p>
+    )    
+}
+
+export {First, UseServices}

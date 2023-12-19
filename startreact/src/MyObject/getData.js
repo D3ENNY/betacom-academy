@@ -13,7 +13,6 @@ class GetData extends React.Component{
         fetch('https://jsonplaceholder.typicode.com/todos')
         .then((response) => response.json())
         .then((json) => {
-            console.log(json)
             this.setState({placeholderObj: json})
         })
     }
@@ -22,7 +21,7 @@ class GetData extends React.Component{
         const {placeholderObj} = this.state
         return (
             <div>
-                <h1>data da JSONPlasceholder</h1>
+                <h1>data da JSON Plasceholder</h1>
                 {placeholderObj.map((x) => (
                     <div>
                         ID {x.id}
