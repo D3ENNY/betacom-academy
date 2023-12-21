@@ -45,7 +45,7 @@ public partial class AnagraficaGenerale
     [RegularExpression(@"^\d{10}$", ErrorMessage = "Telefono must be a number with italian format and without country code")]
     public string? Telefono { get; set; }   
 
-    public string? Paassword { get; set; }
+    public string? Password { get; set; }
 
     public virtual ICollection<AttivitaDipendenti> AttivitaDipendentis { get; set; } = new List<AttivitaDipendenti>();
 

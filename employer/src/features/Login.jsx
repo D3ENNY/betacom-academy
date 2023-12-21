@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import HookgetEmployee from "../services/loginService";
+import { useNavigate } from 'react-router-dom';
+
 
 const LoginPage = () => {
 
@@ -7,6 +8,7 @@ const LoginPage = () => {
   const [password, setPassword] = useState("")
   const [phoneError, setPhoneError] = useState("")
   const [passwordError, setPasswordError] = useState("")
+  const navigate = useNavigate()
 
   const onBtnClick = (event) => {
     event.preventDefault();
@@ -19,7 +21,7 @@ const LoginPage = () => {
     }
 
     if (!/^[\d]{10}$/.test(phone)) {
-        setPhoneError("Please enter a valid email")
+        setPhoneError("Please enter a valid phone number")
         return
     }
 
@@ -36,10 +38,14 @@ const LoginPage = () => {
     }
 
     if(phoneError === "" && passwordError === ""){
-      const employee = HookgetEmployee({phone: {val: phone}})
-      
-      if(password.trim() == employee.)
+      if (password.trim() === "pippo123!" && phone.trim() === "1234567890") {
+        localStorage.setItem("Logged", {phone: phone, pwd: password})
+        navigate('/')
+      }
+      else if(phone.trim() !== "1234567890") setPhoneError("wrong phone number")
+      else if(password.trim() !== "pippo123!") setPasswordError("wrong password")
     }
+
   }
 
     return(

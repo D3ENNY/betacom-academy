@@ -37,12 +37,12 @@ namespace WebApplication1.Controllers
             if (_context.AnagraficaGenerales == null)
                 return NotFound();
 
-            var employee = await _context.AnagraficaGenerales.FirstOrDefaultAsync(e => e.Telefono.Trim() == phone);
+            AnagraficaGenerale employee = await _context.AnagraficaGenerales.FirstOrDefaultAsync(e => e.Telefono.Trim() == phone);
 
             if (employee == null)
                 return NotFound();
 
-            return employee;
+            return Ok(employee);
         }
 
         // PUT: api/AnagraficaGenerales/5

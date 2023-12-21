@@ -55,7 +55,7 @@ public partial class EmployerContext : DbContext
             entity.Property(e => e.Telefono)
                 .HasMaxLength(15)
                 .IsFixedLength();
-            entity.Property(e => e.Paassword)
+            entity.Property(e => e.Password)
                 .HasMaxLength(256);
                 
         });
